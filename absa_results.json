@@ -1,0 +1,57 @@
+[
+  {
+    "original_text": "Kargo çok hızlı geldi ama ürün kutusu ezikti.",
+    "aspects_analyzed": [
+      {
+        "aspect": "ürün kutusu",
+        "sentiment": "negative",
+        "confidence": 0.999,
+        "all_scores": {
+          "negative": 0.999,
+          "neutral": 0.001,
+          "positive": 0.001
+        }
+      }
+    ]
+  },
+  {
+    "original_text": "Fiyat performans olarak harika, sadece renk biraz farklıydı.",
+    "aspects_analyzed": [
+      {
+        "aspect": "renk",
+        "sentiment": "neutral",
+        "confidence": 0.937,
+        "all_scores": {
+          "negative": 0.06,
+          "neutral": 0.937,
+          "positive": 0.003
+        }
+      },
+      {
+        "aspect": "fiyat performans",
+        "sentiment": "positive",
+        "confidence": 0.965,
+        "all_scores": {
+          "negative": 0.005,
+          "neutral": 0.03,
+          "positive": 0.965
+        }
+      }
+    ]
+  },
+  {
+    "original_text": "Müşteri hizmetleri çok ilgili, kesinlikle tekrar alışveriş yaparım.",
+    "aspects_analyzed": [
+      {
+        "aspect": "müşteri hizmetleri",
+        "sentiment": "positive",
+        "confidence": 0.999,
+        "all_scores": {
+          "negative": 0.0,
+          "neutral": 0.0,
+          "positive": 0.999
+        }
+      }
+    ]
+  }
+]
