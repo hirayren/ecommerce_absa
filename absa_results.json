@@ -3,10 +3,24 @@
     "original_text": "Kargo çok hızlı geldi ama ürün kutusu ezikti.",
     "aspects_analyzed": [
       {
+        "aspect": "kargo",
+        "sentiment": "uncertain",
+        "star_rating": 3.72,
+        "confidence": 0.556,
+        "status": "LOW_CONFIDENCE",
+        "probabilities": {
+          "negative": 0.198,
+          "neutral": 0.246,
+          "positive": 0.556
+        }
+      },
+      {
         "aspect": "ürün kutusu",
         "sentiment": "negative",
+        "star_rating": 1.0,
         "confidence": 0.999,
-        "all_scores": {
+        "status": "OK",
+        "probabilities": {
           "negative": 0.999,
           "neutral": 0.001,
           "positive": 0.001
@@ -18,23 +32,27 @@
     "original_text": "Fiyat performans olarak harika, sadece renk biraz farklıydı.",
     "aspects_analyzed": [
       {
-        "aspect": "renk",
-        "sentiment": "neutral",
-        "confidence": 0.937,
-        "all_scores": {
-          "negative": 0.06,
-          "neutral": 0.937,
-          "positive": 0.003
+        "aspect": "fiyat performans",
+        "sentiment": "positive",
+        "star_rating": 4.93,
+        "confidence": 0.97,
+        "status": "OK",
+        "probabilities": {
+          "negative": 0.003,
+          "neutral": 0.026,
+          "positive": 0.97
         }
       },
       {
-        "aspect": "fiyat performans",
-        "sentiment": "positive",
-        "confidence": 0.965,
-        "all_scores": {
-          "negative": 0.005,
-          "neutral": 0.03,
-          "positive": 0.965
+        "aspect": "renk",
+        "sentiment": "neutral",
+        "star_rating": 2.92,
+        "confidence": 0.952,
+        "status": "OK",
+        "probabilities": {
+          "negative": 0.044,
+          "neutral": 0.952,
+          "positive": 0.004
         }
       }
     ]
@@ -45,8 +63,10 @@
       {
         "aspect": "müşteri hizmetleri",
         "sentiment": "positive",
+        "star_rating": 5.0,
         "confidence": 0.999,
-        "all_scores": {
+        "status": "OK",
+        "probabilities": {
           "negative": 0.0,
           "neutral": 0.0,
           "positive": 0.999

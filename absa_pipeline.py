@@ -58,49 +58,76 @@ COMPOUND_ASPECTS = {
 }
 
 def extract_aspects(text):
-    """
-    Compound (birleşik) aspect'leri öncelikli yakalar,
-    parçalanmayı engeller ve temiz liste döndürür.
-    """
     text_clean = re.sub(r'[^\w\sğüşıöç]', ' ', text.lower())
     words = text_clean.split()
     aspects = set()
-    
+    used_words = set()  # Cümlede compound olarak yakalanan kelimeleri burada tutacağız
+
     # 1. Önce compound aspect'leri bul
     for i in range(len(words)-1):
         bigram = f"{words[i]} {words[i+1]}"
         if bigram in COMPOUND_ASPECTS:
             aspects.add(bigram)
-    
-    # 2. Tek kelimelik aspect'leri ekle (compound'a dahil olmayanları)
+            used_words.update([words[i], words[i+1]])  # Bu kelimeleri "kullanıldı" olarak işaretle
+
+    # 2. Tek kelimelik aspect'leri ekle (sadece compound'larda kullanılmayanları)
     for word in words:
         if word in ASPECT_KEYWORDS and word not in STOPWORDS:
-            # Bu kelime zaten bir compound'ın parçasıysa, tek başına ekleme
-            if not any(word in comp for comp in COMPOUND_ASPECTS):
+            if word not in used_words:  # Sadece bu cümlede compound'a girmemişse ekle
                 aspects.add(word)
-    
+
     return list(aspects) if aspects else ["ürün"]
 
 # ==========================================
-# 3. ABSA ANALİZİ (Duygu Sınıflandırma)
+# 3. GELİŞMİŞ ABSA ANALİZİ (Threshold + 1-5 Yıldız)
 # ==========================================
+CONFIDENCE_THRESHOLD = 0.65  # %65'in altındaki tahminler "belirsiz" sayılır
+
 def analyze_sentiment(text, aspect):
-    input_text = f"[CLS] {text} [SEP] {aspect} [SEP]"
+    # Input formatı: [CLS] yorum [SEP] aspect: aspect [SEP]
+    input_text = f"[CLS] {text} [SEP] aspect: {aspect} [SEP]"
     inputs = tokenizer(input_text, return_tensors="pt", truncation=True, max_length=128)
     
     with torch.no_grad():
         outputs = model(**inputs)
     
+    # Softmax ile 0-1 arasına çevir
     probs = F.softmax(outputs.logits, dim=-1)[0]
     predicted_id = torch.argmax(probs).item()
     confidence = probs[predicted_id].item()
-    sentiment = id2label[predicted_id]
     
+    # Olasılıkları indekslere göre ayır (Genelde 0:Neg, 1:Neu, 2:Pos)
+    p_neg = probs[0].item()
+    p_neu = probs[1].item()
+    p_pos = probs[2].item()
+    
+    # 📊 1-5 Yıldız Hesaplama (Ağırlıklı Ortalama)
+    # Negatif -> 1, Nötr -> 3, Pozitif -> 5 puan ağırlığı
+    star_rating = (p_neg * 1.0) + (p_neu * 3.0) + (p_pos * 5.0)
+    star_rating = max(1.0, min(5.0, round(star_rating, 2))) # 1 ile 5 arasında sınırla
+    
+    # Etiket eşlemesi
+    raw_label = id2label[predicted_id]
+    sentiment = label_mapping.get(raw_label, raw_label)
+    
+    # 🔻 Threshold Kontrolü
+    if confidence < CONFIDENCE_THRESHOLD:
+        sentiment = "uncertain"
+        status = "LOW_CONFIDENCE"
+    else:
+        status = "OK"
+        
     return {
         "aspect": aspect,
-        "sentiment": label_mapping.get(sentiment, sentiment),  # LABEL_2 → positive
+        "sentiment": sentiment,
+        "star_rating": star_rating,
         "confidence": round(confidence, 3),
-        "all_scores": {label_mapping.get(k, k): round(v, 3) for k, v in {id2label[i]: probs[i].item() for i in range(len(probs))}.items()}
+        "status": status,
+        "probabilities": {
+            "negative": round(p_neg, 3),
+            "neutral": round(p_neu, 3),
+            "positive": round(p_pos, 3)
+        }
     }
 
 # ==========================================
