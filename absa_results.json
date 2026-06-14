@@ -42,18 +42,6 @@
           "neutral": 0.026,
           "positive": 0.97
         }
-      },
-      {
-        "aspect": "renk",
-        "sentiment": "neutral",
-        "star_rating": 2.92,
-        "confidence": 0.952,
-        "status": "OK",
-        "probabilities": {
-          "negative": 0.044,
-          "neutral": 0.952,
-          "positive": 0.004
-        }
       }
     ]
   },

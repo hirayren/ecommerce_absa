@@ -30,53 +30,79 @@ label_mapping = {
 }
 
 # ==========================================
-# 2. GELİŞMİŞ ASPECT EXTRACTION (Compound Öncelikli)
+# 2. NİHAİ VE GÜVENLİ ASPECT EXTRACTION
 # ==========================================
-# Temel aspect kelimeleri
-ASPECT_KEYWORDS = {
-    "kargo", "teslimat", "gönderi", "paket", "kutu",
-    "fiyat", "ücret", "para", "indirim", "pahalı", "ucuz",
-    "kalite", "malzeme", "sağlamlık", "dayanıklılık",
-    "renk", "boyut", "beden", "model", "tasarım",
+GENERAL_ASPECTS = {
+    "kargo", "teslimat", "gönderi", "paket", "kutu", "ambalaj",
+    "fiyat", "ücret", "para", "indirim", "değer", "maliyet",
     "müşteri hizmetleri", "destek", "iletişim", "iade", "değişim",
-    "ürün", "sipariş", "marka", "satıcı", "mağaza"
+    "satıcı", "mağaza", "ürün"
 }
 
-# Türkçe stopword'ler
+# (CATEGORY_ASPECTS ve STOPWORDS önceki gibi kalsın)
+CATEGORY_ASPECTS = {
+    "elektronik": {"pil", "şarj", "ekran", "kamera", "işlemci", "hafıza", "ram", "batarya", "ses", "görüntü"},
+    "giyim": {"kumaş", "beden", "kalıp", "dikiş", "renk", "yıkama", "ütü", "fermuar"},
+    "kozmetik": {"koku", "cilt", "içerik", "etki", "doku", "leke"},
+    "ev_yasam": {"montaj", "sağlamlık", "temizlik", "kurulum", "boyut"}
+}
+
+COMPOUND_ASPECTS = {
+    "ürün kutusu", "kargo kutusu", "paket kutusu", "ambalaj hasarı",
+    "müşteri hizmetleri", "fiyat performans", "kalite fiyat",
+    "teslimat süresi", "iade süreci", "değişim hakkı", "kargo takip"
+}
+
 STOPWORDS = {
     "ve", "veya", "ama", "fakat", "ile", "için", "bir", "bu", "şu", "o",
     "de", "da", "mi", "mı", "mu", "mü", "çok", "daha", "en", "az",
     "gibi", "kadar", "sonra", "önce", "şimdi", "bugün", "yarın"
 }
 
-# Sık geçen BİRLEŞİK (Compound) Aspect'ler
-COMPOUND_ASPECTS = {
-    "ürün kutusu", "kargo kutusu", "paket kutusu", "ambalaj hasarı",
-    "müşteri hizmetleri", "fiyat performans", "kalite fiyat",
-    "teslimat süresi", "iade süreci", "değişim hakkı", "kargo takip",
-    "satıcı puanı", "mağaza güvenilirlik"
-}
+def smart_aspect_matcher(word, active_keywords):
+    if word in active_keywords:
+        return word
+    
+    suffixes = ['lerinden', 'larından', 'lerimiz', 'larımız', 
+                'inden', 'ından', 'unden', 'ünden',
+                'den', 'dan', 'ten', 'tan', 'de', 'da', 'te', 'ta',
+                'nin', 'nın', 'nun', 'nün', 'in', 'ın', 'un', 'ün',
+                'yi', 'yı', 'yu', 'yü',
+                'ler', 'lar', 'm', 'n', 'miz', 'niz', 'muz', 'nuz',
+                'i', 'ı', 'u', 'ü']
+    
+    for suffix in suffixes:
+        if word.endswith(suffix) and len(word) > len(suffix) + 2:
+            potential_stem = word[:-len(suffix)]
+            if potential_stem in active_keywords:
+                return potential_stem
+    return None
 
-def extract_aspects(text):
+def extract_aspects(text, category="genel"):
     text_clean = re.sub(r'[^\w\sğüşıöç]', ' ', text.lower())
     words = text_clean.split()
     aspects = set()
-    used_words = set()  # Cümlede compound olarak yakalanan kelimeleri burada tutacağız
+    used_words = set()
 
-    # 1. Önce compound aspect'leri bul
+    active_keywords = GENERAL_ASPECTS.union(CATEGORY_ASPECTS.get(category, set()))
+
+    # 1. Compound aspect'leri bul
     for i in range(len(words)-1):
         bigram = f"{words[i]} {words[i+1]}"
         if bigram in COMPOUND_ASPECTS:
             aspects.add(bigram)
-            used_words.update([words[i], words[i+1]])  # Bu kelimeleri "kullanıldı" olarak işaretle
+            used_words.update([words[i], words[i+1]])
 
-    # 2. Tek kelimelik aspect'leri ekle (sadece compound'larda kullanılmayanları)
+    # 2. Tek kelimelik aspect'leri akıllı eşleştirici ile bul
     for word in words:
-        if word in ASPECT_KEYWORDS and word not in STOPWORDS:
-            if word not in used_words:  # Sadece bu cümlede compound'a girmemişse ekle
-                aspects.add(word)
+        if word not in STOPWORDS:
+            matched_aspect = smart_aspect_matcher(word, active_keywords)
+            if matched_aspect:
+                aspects.add(matched_aspect)
+                used_words.add(word)
 
-    return list(aspects) if aspects else ["ürün"]
+    # KRİTİK DEĞİŞİKLİK: Hiçbir şey bulunamazsa ["ürün"] DAYATMA, boş liste dön.
+    return list(aspects)
 
 # ==========================================
 # 3. GELİŞMİŞ ABSA ANALİZİ (Threshold + 1-5 Yıldız)
@@ -131,23 +157,51 @@ def analyze_sentiment(text, aspect):
     }
 
 # ==========================================
-# 4. ANA PIPELINE
+# 4. ANA PIPELINE (Business Rule Entegrasyonlu)
 # ==========================================
-def run_absa_pipeline(review_text):
-    print(f"\n🔍 Analiz: '{review_text}'")
+def apply_domain_rules(text, aspect, result):
+    """
+    Modelin bağlamı kaçırabileceği durumlar için iş kuralları (Business Rules) uygular.
+    """
+    # KURAL 1: Paket/Kutu Hasar Kontrolü
+    if aspect in ["paket", "kutu", "ambalaj"]:
+        negative_packaging_words = ["açık", "açılmış", "leke", "ezik", "yırtık", "hasarlı", "kırık", "darbe", "yırtılmış"]
+        if any(word in text for word in negative_packaging_words):
+            # Model pozitif veya nötr dediyse, bunu negatife çek
+            if result["sentiment"] != "negative":
+                result["sentiment"] = "negative"
+                result["confidence"] = max(result["confidence"], 0.85) # Güveni de düzelt
+                result["status"] = "RULE_OVERRIDE" # Jüriye göstermek için özel statü
+                result["star_rating"] = 1.0 # Yıldızı da düşür
+                
+    return result
+
+def run_absa_pipeline(review_text, category="genel"):
+    # 1. Aspect'leri çıkar
+    aspects = extract_aspects(review_text, category)
     
-    aspects = extract_aspects(review_text)
-    print(f"📌 Aspect'ler: {aspects}")
+    # KRİTİK DEĞİŞİKLİK: Aspect bulunamadıysa, zorla "ürün" yapma.
+    if not aspects:
+        return {
+            "original_text": review_text,
+            "aspects_analyzed": [],
+            "message": "NO_ASPECT_FOUND", # Frontend bunu "Genel Yorum / Analiz Edilmedi" olarak gösterebilir
+            "status": "IRRELEVANT_FOR_ABSA"
+        }
     
     results = []
     for asp in aspects:
         res = analyze_sentiment(review_text, asp)
+        
+        # 🛡️ Business Rule Uygula (Paket/kutu hatalarını düzelt)
+        res = apply_domain_rules(review_text, asp, res)
+        
         results.append(res)
-        print(f"  ✅ {asp}: {res['sentiment'].upper()} ({res['confidence']:.1%})")
         
     return {
         "original_text": review_text,
-        "aspects_analyzed": results
+        "aspects_analyzed": results,
+        "status": "OK"
     }
 
 # ==========================================

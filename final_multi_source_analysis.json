@@ -4,12 +4,12 @@
       "TicaretVitrini": {
         "summary": {
           "total_reviews": 1,
-          "total_aspects_analyzed": 1,
-          "average_absa_star_rating": 4.94,
+          "total_aspects_analyzed": 2,
+          "average_absa_star_rating": 3.0,
           "sentiment_distribution": {
             "positive": 1,
             "neutral": 0,
-            "negative": 0,
+            "negative": 1,
             "uncertain": 0
           }
         },
@@ -25,17 +25,30 @@
               "aspects_analyzed": [
                 {
                   "aspect": "paket",
-                  "sentiment": "positive",
-                  "star_rating": 4.94,
+                  "sentiment": "negative",
+                  "star_rating": 1.0,
                   "confidence": 0.973,
-                  "status": "OK",
+                  "status": "RULE_OVERRIDE",
                   "probabilities": {
                     "negative": 0.001,
                     "neutral": 0.026,
                     "positive": 0.973
                   }
+                },
+                {
+                  "aspect": "ürün",
+                  "sentiment": "positive",
+                  "star_rating": 4.99,
+                  "confidence": 0.994,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.0,
+                    "neutral": 0.006,
+                    "positive": 0.994
+                  }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           }
         ]
@@ -43,10 +56,10 @@
       "PLUSTEKNO": {
         "summary": {
           "total_reviews": 1,
-          "total_aspects_analyzed": 1,
-          "average_absa_star_rating": 4.75,
+          "total_aspects_analyzed": 0,
+          "average_absa_star_rating": 0.0,
           "sentiment_distribution": {
-            "positive": 1,
+            "positive": 0,
             "neutral": 0,
             "negative": 0,
             "uncertain": 0
@@ -61,20 +74,9 @@
             },
             "absa_analysis": {
               "original_text": "herkese tavsiyem windows tan kurtulun rahat edin",
-              "aspects_analyzed": [
-                {
-                  "aspect": "ürün",
-                  "sentiment": "positive",
-                  "star_rating": 4.75,
-                  "confidence": 0.923,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.048,
-                    "neutral": 0.029,
-                    "positive": 0.923
-                  }
-                }
-              ]
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
             }
           }
         ]
@@ -113,7 +115,8 @@
                     "positive": 0.002
                   }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           }
         ]
@@ -121,12 +124,12 @@
       "Hepsiburada": {
         "summary": {
           "total_reviews": 10,
-          "total_aspects_analyzed": 12,
-          "average_absa_star_rating": 3.55,
+          "total_aspects_analyzed": 10,
+          "average_absa_star_rating": 3.68,
           "sentiment_distribution": {
-            "positive": 8,
+            "positive": 7,
             "neutral": 0,
-            "negative": 4,
+            "negative": 3,
             "uncertain": 0
           }
         },
@@ -152,7 +155,8 @@
                     "positive": 0.974
                   }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           },
           {
@@ -176,7 +180,8 @@
                     "positive": 0.998
                   }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           },
           {
@@ -200,7 +205,8 @@
                     "positive": 0.002
                   }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           },
           {
@@ -211,20 +217,9 @@
             },
             "absa_analysis": {
               "original_text": "mükemmel anlatmaya gerek yok",
-              "aspects_analyzed": [
-                {
-                  "aspect": "ürün",
-                  "sentiment": "positive",
-                  "star_rating": 4.99,
-                  "confidence": 0.998,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.002,
-                    "neutral": 0.001,
-                    "positive": 0.998
-                  }
-                }
-              ]
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
             }
           },
           {
@@ -248,7 +243,8 @@
                     "positive": 0.001
                   }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           },
           {
@@ -261,18 +257,6 @@
               "original_text": "ürün sipariş verdiğimin ertesi günü çok hızlı sağlam bir şekilde elime ulaştı",
               "aspects_analyzed": [
                 {
-                  "aspect": "sipariş",
-                  "sentiment": "positive",
-                  "star_rating": 4.72,
-                  "confidence": 0.896,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.035,
-                    "neutral": 0.069,
-                    "positive": 0.896
-                  }
-                },
-                {
                   "aspect": "ürün",
                   "sentiment": "positive",
                   "star_rating": 4.91,
@@ -284,7 +268,8 @@
                     "positive": 0.96
                   }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           },
           {
@@ -297,18 +282,6 @@
               "original_text": "ürün güzel sadece garanti süresi ayarlarda farklıydı sebebini bilmiyorum apple müşteri hizmetlerini arayıp düzelttirdim fark etmemiş olsaydım 7 ay önce bitecekti garantisi ayrıca aldıktan sonra 1500 lira fiyat düştü konu biraz üzdü",
               "aspects_analyzed": [
                 {
-                  "aspect": "fiyat",
-                  "sentiment": "negative",
-                  "star_rating": 1.0,
-                  "confidence": 0.999,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.999,
-                    "neutral": 0.001,
-                    "positive": 0.001
-                  }
-                },
-                {
                   "aspect": "ürün",
                   "sentiment": "positive",
                   "star_rating": 4.0,
@@ -319,8 +292,21 @@
                     "neutral": 0.093,
                     "positive": 0.703
                   }
+                },
+                {
+                  "aspect": "fiyat",
+                  "sentiment": "negative",
+                  "star_rating": 1.0,
+                  "confidence": 0.999,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.999,
+                    "neutral": 0.001,
+                    "positive": 0.001
+                  }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           },
           {
@@ -343,8 +329,21 @@
                     "neutral": 0.001,
                     "positive": 0.998
                   }
+                },
+                {
+                  "aspect": "ürün",
+                  "sentiment": "positive",
+                  "star_rating": 5.0,
+                  "confidence": 0.999,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.0,
+                    "neutral": 0.001,
+                    "positive": 0.999
+                  }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           },
           {
@@ -368,7 +367,8 @@
                     "positive": 0.998
                   }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           },
           {
@@ -379,20 +379,9 @@
             },
             "absa_analysis": {
               "original_text": "gelen pc command tuşunda yıpranmışlık vardı kullanılmış mıdır nedie bilmiyorum değiştirilmesini istiyorum",
-              "aspects_analyzed": [
-                {
-                  "aspect": "ürün",
-                  "sentiment": "negative",
-                  "star_rating": 1.02,
-                  "confidence": 0.99,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.99,
-                    "neutral": 0.007,
-                    "positive": 0.002
-                  }
-                }
-              ]
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
             }
           }
         ]
@@ -424,6 +413,18 @@
               "original_text": "pili bitmiş 3 yıl önce garantisi bitmiş ürünü bana gönderip durumu belgelediğim halde 15 günlük süre geçtiğin almayan satıcı isterseniz siz alın",
               "aspects_analyzed": [
                 {
+                  "aspect": "ürün",
+                  "sentiment": "negative",
+                  "star_rating": 1.01,
+                  "confidence": 0.998,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.998,
+                    "neutral": 0.001,
+                    "positive": 0.001
+                  }
+                },
+                {
                   "aspect": "satıcı",
                   "sentiment": "negative",
                   "star_rating": 1.01,
@@ -435,7 +436,8 @@
                     "positive": 0.001
                   }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           },
           {
@@ -448,27 +450,15 @@
               "original_text": "5 yıldız veriyorum alacak kişiler dikkat etsin trendyol üzerinden böyle pahalı ürünler almayın çünkü bozuksa bi problemi varsa uzun uzun uğraşmanız gerekecek iade kabul etmiyorlar paket açılımı bahanesi aldığım ürün 2021 açılmış garantisi bitmiş pili ölmüş iadesinin reddi birbiri uyuşmayan bahaneler söylediler ülkenin hukuku var emin olun yanınıza kalmayacak",
               "aspects_analyzed": [
                 {
-                  "aspect": "pahalı",
+                  "aspect": "iade",
                   "sentiment": "negative",
                   "star_rating": 1.01,
-                  "confidence": 0.998,
+                  "confidence": 0.999,
                   "status": "OK",
                   "probabilities": {
-                    "negative": 0.998,
-                    "neutral": 0.001,
-                    "positive": 0.002
-                  }
-                },
-                {
-                  "aspect": "ürün",
-                  "sentiment": "negative",
-                  "star_rating": 1.01,
-                  "confidence": 0.998,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.998,
-                    "neutral": 0.001,
-                    "positive": 0.002
+                    "negative": 0.999,
+                    "neutral": 0.0,
+                    "positive": 0.001
                   }
                 },
                 {
@@ -484,18 +474,19 @@
                   }
                 },
                 {
-                  "aspect": "iade",
+                  "aspect": "ürün",
                   "sentiment": "negative",
                   "star_rating": 1.01,
-                  "confidence": 0.999,
+                  "confidence": 0.998,
                   "status": "OK",
                   "probabilities": {
-                    "negative": 0.999,
-                    "neutral": 0.0,
-                    "positive": 0.001
+                    "negative": 0.998,
+                    "neutral": 0.001,
+                    "positive": 0.002
                   }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           }
         ]
@@ -503,12 +494,12 @@
       "BSlina": {
         "summary": {
           "total_reviews": 1,
-          "total_aspects_analyzed": 1,
+          "total_aspects_analyzed": 2,
           "average_absa_star_rating": 1.0,
           "sentiment_distribution": {
             "positive": 0,
             "neutral": 0,
-            "negative": 1,
+            "negative": 2,
             "uncertain": 0
           }
         },
@@ -523,6 +514,18 @@
               "original_text": "hatalı ürün gönderdiler sırf kutuyu açtım diye iademi kabul etmeyip günlerce oyaladılar hiç memnun kalmadım",
               "aspects_analyzed": [
                 {
+                  "aspect": "kutu",
+                  "sentiment": "negative",
+                  "star_rating": 1.0,
+                  "confidence": 0.999,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.999,
+                    "neutral": 0.0,
+                    "positive": 0.001
+                  }
+                },
+                {
                   "aspect": "ürün",
                   "sentiment": "negative",
                   "star_rating": 1.0,
@@ -534,7 +537,8 @@
                     "positive": 0.001
                   }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           }
         ]
@@ -542,13 +546,13 @@
       "Trendyol": {
         "summary": {
           "total_reviews": 7,
-          "total_aspects_analyzed": 7,
-          "average_absa_star_rating": 4.06,
+          "total_aspects_analyzed": 4,
+          "average_absa_star_rating": 4.0,
           "sentiment_distribution": {
-            "positive": 5,
+            "positive": 3,
             "neutral": 0,
             "negative": 1,
-            "uncertain": 1
+            "uncertain": 0
           }
         },
         "detailed_reviews": [
@@ -573,7 +577,8 @@
                     "positive": 1.0
                   }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           },
           {
@@ -584,20 +589,9 @@
             },
             "absa_analysis": {
               "original_text": "acaba bozulur mu diye tereddüt ettim yazmak istemedim kurtarıcı çok hafif yl öğrencilerine tavsiye edilir",
-              "aspects_analyzed": [
-                {
-                  "aspect": "ürün",
-                  "sentiment": "positive",
-                  "star_rating": 4.96,
-                  "confidence": 0.981,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.002,
-                    "neutral": 0.017,
-                    "positive": 0.981
-                  }
-                }
-              ]
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
             }
           },
           {
@@ -608,20 +602,9 @@
             },
             "absa_analysis": {
               "original_text": "gayet güvenilir uygun fiyatlı aldım 10 aydır kullanıyorum teşekkürler",
-              "aspects_analyzed": [
-                {
-                  "aspect": "ürün",
-                  "sentiment": "positive",
-                  "star_rating": 4.93,
-                  "confidence": 0.968,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.001,
-                    "neutral": 0.03,
-                    "positive": 0.968
-                  }
-                }
-              ]
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
             }
           },
           {
@@ -645,7 +628,8 @@
                     "positive": 0.002
                   }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           },
           {
@@ -656,20 +640,9 @@
             },
             "absa_analysis": {
               "original_text": "iyi almışım dediğim nadir eşyalarımdan yaklaşık 6 ay oldu alalı hala ilk günkü performansında hiçbir sıkıntı yok sadece ses sistemini çok beğenemedim ses boğuk derinden geliyor clear değil",
-              "aspects_analyzed": [
-                {
-                  "aspect": "ürün",
-                  "sentiment": "uncertain",
-                  "star_rating": 2.58,
-                  "confidence": 0.495,
-                  "status": "LOW_CONFIDENCE",
-                  "probabilities": {
-                    "negative": 0.495,
-                    "neutral": 0.22,
-                    "positive": 0.286
-                  }
-                }
-              ]
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
             }
           },
           {
@@ -693,7 +666,8 @@
                     "positive": 0.998
                   }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           },
           {
@@ -717,7 +691,8 @@
                     "positive": 0.989
                   }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           }
         ]
@@ -756,7 +731,8 @@
                     "positive": 0.001
                   }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           }
         ]
@@ -795,7 +771,8 @@
                     "positive": 1.0
                   }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           }
         ]
@@ -807,12 +784,12 @@
       "Fly Technology Ankara": {
         "summary": {
           "total_reviews": 3,
-          "total_aspects_analyzed": 3,
-          "average_absa_star_rating": 2.88,
+          "total_aspects_analyzed": 1,
+          "average_absa_star_rating": 2.74,
           "sentiment_distribution": {
-            "positive": 1,
+            "positive": 0,
             "neutral": 0,
-            "negative": 1,
+            "negative": 0,
             "uncertain": 1
           }
         },
@@ -825,20 +802,9 @@
             },
             "absa_analysis": {
               "original_text": "on numara beş yıldız kaç aydır kullanıyoruz sorun yok",
-              "aspects_analyzed": [
-                {
-                  "aspect": "ürün",
-                  "sentiment": "positive",
-                  "star_rating": 4.9,
-                  "confidence": 0.959,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.01,
-                    "neutral": 0.031,
-                    "positive": 0.959
-                  }
-                }
-              ]
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
             }
           },
           {
@@ -862,7 +828,8 @@
                     "positive": 0.414
                   }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           },
           {
@@ -873,20 +840,9 @@
             },
             "absa_analysis": {
               "original_text": "cihazı alalı 7 ay oldu kendi kendine kapandı servise gönderdim içine sıvı aldığı garantiden çıktığını söylediler sıvı alıcak bi konumda olmadığı halde başımıza geldi oda soğuk sıcak olduğu dönemler oldu bundan kaynaklı sıvı aldıysa hiç dayanıklı uzun ömürlü bi cihaz değil tavsiye etmiyorum",
-              "aspects_analyzed": [
-                {
-                  "aspect": "ürün",
-                  "sentiment": "negative",
-                  "star_rating": 1.0,
-                  "confidence": 0.999,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.999,
-                    "neutral": 0.001,
-                    "positive": 0.001
-                  }
-                }
-              ]
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
             }
           }
         ]
@@ -925,7 +881,8 @@
                     "positive": 0.837
                   }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           }
         ]
@@ -933,10 +890,10 @@
       "ALB Teknoloji": {
         "summary": {
           "total_reviews": 1,
-          "total_aspects_analyzed": 1,
-          "average_absa_star_rating": 4.99,
+          "total_aspects_analyzed": 0,
+          "average_absa_star_rating": 0.0,
           "sentiment_distribution": {
-            "positive": 1,
+            "positive": 0,
             "neutral": 0,
             "negative": 0,
             "uncertain": 0
@@ -951,20 +908,9 @@
             },
             "absa_analysis": {
               "original_text": "çok memnunum her şeyi mükemmeldi iyi almışım",
-              "aspects_analyzed": [
-                {
-                  "aspect": "ürün",
-                  "sentiment": "positive",
-                  "star_rating": 4.99,
-                  "confidence": 0.995,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.001,
-                    "neutral": 0.003,
-                    "positive": 0.995
-                  }
-                }
-              ]
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
             }
           }
         ]
@@ -972,10 +918,10 @@
       "BAŞAKŞEHİR AWM": {
         "summary": {
           "total_reviews": 1,
-          "total_aspects_analyzed": 1,
-          "average_absa_star_rating": 4.85,
+          "total_aspects_analyzed": 0,
+          "average_absa_star_rating": 0.0,
           "sentiment_distribution": {
-            "positive": 1,
+            "positive": 0,
             "neutral": 0,
             "negative": 0,
             "uncertain": 0
@@ -990,20 +936,9 @@
             },
             "absa_analysis": {
               "original_text": "eşime hediyeydi severek kullanıyor",
-              "aspects_analyzed": [
-                {
-                  "aspect": "ürün",
-                  "sentiment": "positive",
-                  "star_rating": 4.85,
-                  "confidence": 0.941,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.014,
-                    "neutral": 0.045,
-                    "positive": 0.941
-                  }
-                }
-              ]
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
             }
           }
         ]
@@ -1011,12 +946,12 @@
       "Ritoys": {
         "summary": {
           "total_reviews": 1,
-          "total_aspects_analyzed": 1,
-          "average_absa_star_rating": 1.1,
+          "total_aspects_analyzed": 0,
+          "average_absa_star_rating": 0.0,
           "sentiment_distribution": {
             "positive": 0,
             "neutral": 0,
-            "negative": 1,
+            "negative": 0,
             "uncertain": 0
           }
         },
@@ -1029,20 +964,9 @@
             },
             "absa_analysis": {
               "original_text": "abi ps alacağına bunu alın daha iyi gamepass çok oyun oynuyorum aylık 700 800 liraya daha ne olsun",
-              "aspects_analyzed": [
-                {
-                  "aspect": "ürün",
-                  "sentiment": "negative",
-                  "star_rating": 1.1,
-                  "confidence": 0.97,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.97,
-                    "neutral": 0.013,
-                    "positive": 0.017
-                  }
-                }
-              ]
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
             }
           }
         ]
@@ -1050,10 +974,10 @@
       "KONSOLTECH": {
         "summary": {
           "total_reviews": 1,
-          "total_aspects_analyzed": 1,
-          "average_absa_star_rating": 4.92,
+          "total_aspects_analyzed": 0,
+          "average_absa_star_rating": 0.0,
           "sentiment_distribution": {
-            "positive": 1,
+            "positive": 0,
             "neutral": 0,
             "negative": 0,
             "uncertain": 0
@@ -1068,20 +992,9 @@
             },
             "absa_analysis": {
               "original_text": "çok iyi sadece dönüştürücü yok kadar yinede teşekkürler dönüştürücü beklemiştik gelmedi kaç saat bekledik yinede sorunsuz güzel",
-              "aspects_analyzed": [
-                {
-                  "aspect": "ürün",
-                  "sentiment": "positive",
-                  "star_rating": 4.92,
-                  "confidence": 0.963,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.005,
-                    "neutral": 0.032,
-                    "positive": 0.963
-                  }
-                }
-              ]
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
             }
           }
         ]
@@ -1089,10 +1002,10 @@
       "teknodeposu": {
         "summary": {
           "total_reviews": 3,
-          "total_aspects_analyzed": 3,
-          "average_absa_star_rating": 4.88,
+          "total_aspects_analyzed": 2,
+          "average_absa_star_rating": 4.99,
           "sentiment_distribution": {
-            "positive": 3,
+            "positive": 2,
             "neutral": 0,
             "negative": 0,
             "uncertain": 0
@@ -1120,7 +1033,8 @@
                     "positive": 0.999
                   }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           },
           {
@@ -1131,20 +1045,9 @@
             },
             "absa_analysis": {
               "original_text": "1 yıldır kullanıyoruz hiç bir performans sorunu yasamadık",
-              "aspects_analyzed": [
-                {
-                  "aspect": "ürün",
-                  "sentiment": "positive",
-                  "star_rating": 4.65,
-                  "confidence": 0.841,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.017,
-                    "neutral": 0.142,
-                    "positive": 0.841
-                  }
-                }
-              ]
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
             }
           },
           {
@@ -1168,7 +1071,8 @@
                     "positive": 0.99
                   }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           }
         ]
@@ -1176,10 +1080,10 @@
       "TeknoCrest": {
         "summary": {
           "total_reviews": 1,
-          "total_aspects_analyzed": 1,
-          "average_absa_star_rating": 5.0,
+          "total_aspects_analyzed": 0,
+          "average_absa_star_rating": 0.0,
           "sentiment_distribution": {
-            "positive": 1,
+            "positive": 0,
             "neutral": 0,
             "negative": 0,
             "uncertain": 0
@@ -1194,20 +1098,9 @@
             },
             "absa_analysis": {
               "original_text": "çok güzel severek kullanıyoruz",
-              "aspects_analyzed": [
-                {
-                  "aspect": "ürün",
-                  "sentiment": "positive",
-                  "star_rating": 5.0,
-                  "confidence": 0.999,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.0,
-                    "neutral": 0.001,
-                    "positive": 0.999
-                  }
-                }
-              ]
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
             }
           }
         ]
@@ -1246,7 +1139,8 @@
                     "positive": 0.992
                   }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           }
         ]
@@ -1258,12 +1152,12 @@
       "Enuyguna": {
         "summary": {
           "total_reviews": 6,
-          "total_aspects_analyzed": 6,
-          "average_absa_star_rating": 3.14,
+          "total_aspects_analyzed": 4,
+          "average_absa_star_rating": 3.0,
           "sentiment_distribution": {
-            "positive": 3,
+            "positive": 2,
             "neutral": 0,
-            "negative": 3,
+            "negative": 2,
             "uncertain": 0
           }
         },
@@ -1288,8 +1182,21 @@
                     "neutral": 0.001,
                     "positive": 0.002
                   }
+                },
+                {
+                  "aspect": "satıcı",
+                  "sentiment": "negative",
+                  "star_rating": 1.01,
+                  "confidence": 0.998,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.998,
+                    "neutral": 0.0,
+                    "positive": 0.001
+                  }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           },
           {
@@ -1300,20 +1207,9 @@
             },
             "absa_analysis": {
               "original_text": "her şey yolundaydı çok iyi teslimattı",
-              "aspects_analyzed": [
-                {
-                  "aspect": "ürün",
-                  "sentiment": "positive",
-                  "star_rating": 4.86,
-                  "confidence": 0.934,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.004,
-                    "neutral": 0.062,
-                    "positive": 0.934
-                  }
-                }
-              ]
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
             }
           },
           {
@@ -1337,7 +1233,8 @@
                     "positive": 1.0
                   }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           },
           {
@@ -1348,20 +1245,9 @@
             },
             "absa_analysis": {
               "original_text": "şuan iyi çalışıyor fps drop vs olmuyor garantisi 6 ay önceden başladığı 1 puan kırdım",
-              "aspects_analyzed": [
-                {
-                  "aspect": "ürün",
-                  "sentiment": "negative",
-                  "star_rating": 1.93,
-                  "confidence": 0.714,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.714,
-                    "neutral": 0.106,
-                    "positive": 0.18
-                  }
-                }
-              ]
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
             }
           },
           {
@@ -1372,20 +1258,9 @@
             },
             "absa_analysis": {
               "original_text": "konsol güzel yalnız faturası çıkmadı fatura talebi oluşturdum",
-              "aspects_analyzed": [
-                {
-                  "aspect": "ürün",
-                  "sentiment": "negative",
-                  "star_rating": 1.05,
-                  "confidence": 0.985,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.985,
-                    "neutral": 0.007,
-                    "positive": 0.008
-                  }
-                }
-              ]
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
             }
           },
           {
@@ -1409,7 +1284,8 @@
                     "positive": 0.999
                   }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           }
         ]
@@ -1417,12 +1293,12 @@
       "MyFaz": {
         "summary": {
           "total_reviews": 3,
-          "total_aspects_analyzed": 4,
-          "average_absa_star_rating": 3.99,
+          "total_aspects_analyzed": 3,
+          "average_absa_star_rating": 4.9,
           "sentiment_distribution": {
             "positive": 3,
             "neutral": 0,
-            "negative": 1,
+            "negative": 0,
             "uncertain": 0
           }
         },
@@ -1460,7 +1336,8 @@
                     "positive": 0.948
                   }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           },
           {
@@ -1484,7 +1361,8 @@
                     "positive": 0.987
                   }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           },
           {
@@ -1495,20 +1373,9 @@
             },
             "absa_analysis": {
               "original_text": "4k 55 65 tvniz var ise bence alın 1080p yada 2k monitör varsa tercih edin yoksa koca ekranda 15 dk bile görğntülere tahamül edemiyorsunuz",
-              "aspects_analyzed": [
-                {
-                  "aspect": "ürün",
-                  "sentiment": "negative",
-                  "star_rating": 1.26,
-                  "confidence": 0.933,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.933,
-                    "neutral": 0.004,
-                    "positive": 0.063
-                  }
-                }
-              ]
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
             }
           }
         ]
@@ -1516,12 +1383,12 @@
       "Hepsiburada": {
         "summary": {
           "total_reviews": 1,
-          "total_aspects_analyzed": 1,
-          "average_absa_star_rating": 1.03,
+          "total_aspects_analyzed": 0,
+          "average_absa_star_rating": 0.0,
           "sentiment_distribution": {
             "positive": 0,
             "neutral": 0,
-            "negative": 1,
+            "negative": 0,
             "uncertain": 0
           }
         },
@@ -1534,20 +1401,9 @@
             },
             "absa_analysis": {
               "original_text": "neredeyse 1 yıl sonunda yazıyorum yıllardım ps kullanıcısıyım oğlumun ısrarıyla box aldım kasa şık onun dışında artısı yok hafıza az olduğundan oyun yüklemek 1 2 oyun silip duruyorsunuz en büyük eksisi kolları arkadaş böyle dandik kol görmedim bir kere çok gürültülü kronik hatası var benimki servise gitti geldi sefer diğer kol sıkıntılı tepkileri yavaş mk 11 deki seri hareketleri her defasında yapmıyor bilginiz olsun düz oyunlarda sıkıntı yaşamazsınız kronik arızaları tamir ettirdikten sonra yıllardır ps4 ps3 ps2 kullandım 1 kere tamire yolladığımı hatırlamıyorum kollarını ps5 bakmaya çoktan başladım bile",
-              "aspects_analyzed": [
-                {
-                  "aspect": "ürün",
-                  "sentiment": "negative",
-                  "star_rating": 1.03,
-                  "confidence": 0.992,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.992,
-                    "neutral": 0.002,
-                    "positive": 0.006
-                  }
-                }
-              ]
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
             }
           }
         ]
@@ -1555,10 +1411,10 @@
       "Nethouse": {
         "summary": {
           "total_reviews": 2,
-          "total_aspects_analyzed": 3,
+          "total_aspects_analyzed": 2,
           "average_absa_star_rating": 4.98,
           "sentiment_distribution": {
-            "positive": 3,
+            "positive": 2,
             "neutral": 0,
             "negative": 0,
             "uncertain": 0
@@ -1573,20 +1429,9 @@
             },
             "absa_analysis": {
               "original_text": "hızlı sorunsuz bir alışveriş oldu nethouse satıcısına güvenebilirsiniz",
-              "aspects_analyzed": [
-                {
-                  "aspect": "ürün",
-                  "sentiment": "positive",
-                  "star_rating": 4.98,
-                  "confidence": 0.99,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.001,
-                    "neutral": 0.009,
-                    "positive": 0.99
-                  }
-                }
-              ]
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
             }
           },
           {
@@ -1622,7 +1467,8 @@
                     "positive": 0.996
                   }
                 }
-              ]
+              ],
+              "status": "OK"
             }
           }
         ]
