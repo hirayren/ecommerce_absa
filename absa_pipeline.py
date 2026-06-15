@@ -36,15 +36,41 @@ GENERAL_ASPECTS = {
     "kargo", "teslimat", "gönderi", "paket", "kutu", "ambalaj",
     "fiyat", "ücret", "para", "indirim", "değer", "maliyet",
     "müşteri hizmetleri", "destek", "iletişim", "iade", "değişim",
-    "satıcı", "mağaza", "ürün"
+    "satıcı", "mağaza", "ürün", "kalite", "performans", "dayanıklılık", "tasarım",
+    "kullanım", "kullanışlılık", "rahatlık"
 }
 
-# (CATEGORY_ASPECTS ve STOPWORDS önceki gibi kalsın)
+# ==========================================
+# TÜM KATEGORİLER İÇİN GENİŞLETİLMİŞ ASPECT LİSTELERİ
+# ==========================================
 CATEGORY_ASPECTS = {
-    "elektronik": {"pil", "şarj", "ekran", "kamera", "işlemci", "hafıza", "ram", "batarya", "ses", "görüntü"},
-    "giyim": {"kumaş", "beden", "kalıp", "dikiş", "renk", "yıkama", "ütü", "fermuar"},
-    "kozmetik": {"koku", "cilt", "içerik", "etki", "doku", "leke"},
-    "ev_yasam": {"montaj", "sağlamlık", "temizlik", "kurulum", "boyut"}
+    "elektronik": {
+        "pil", "şarj", "batarya", "ısınma", "ısın", 
+        "ekran", "görüntü", "kamera", "ses", "hoparlör",
+        "işlemci", "performans", "kasma", "kas", "donma", "don", "hız", "yavaşlama", "yavaş",
+        "hafıza", "ram", "depolama", "ssd", "disk", "klavye", "touchpad", "mouse"
+    },
+    "giyim": {
+        "kumaş", "beden", "kalıp", "dikiş", "renk", "yıkama", "ütü", "fermuar", "düğme",
+        "yırtılma", "yırtıl",      # "yırtılıyor" -> "yırtıl"
+        "sökülme", "sökül",        # "sökülüyor" -> "sökül"
+        "daralma", "daral",        # "daraldı" -> "daral"
+        "tüylenme", "tüylen",      # "tüyleniyor" -> "tüylen"
+        "solma", "sol"             # "rengi soldu" -> "sol"
+    },
+    "kozmetik": {
+        "koku", "cilt", "içerik", "etki", "doku", "leke", "nem", "gözenek",
+        "tahriş", "tahriş et",     # "tahriş etti" -> "tahriş"
+        "kuruma", "kurut",         # "cildimi kuruttu" -> "kurut"
+        "yağlanma", "yağlan",      # "yağlanıyor" -> "yağlan"
+        "sivilce", "akne"
+    },
+    "ev_yasam": {
+        "montaj", "sağlamlık", "temizlik", "kurulum", "boyut", "ağırlık",
+        "kırılma", "kırıl",        # "kırıldı" -> "kırıl"
+        "çizilme", "çizil",        # "çizildi" -> "çizil"
+        "paslanma", "paslan"       # "paslandı" -> "paslan"
+    }
 }
 
 COMPOUND_ASPECTS = {
@@ -60,23 +86,73 @@ STOPWORDS = {
 }
 
 def smart_aspect_matcher(word, active_keywords):
+    # 1. Önce tam eşleşme var mı?
     if word in active_keywords:
-        return word
+        return normalize_aspect(word) # Normalizasyon fonksiyonunu çağır
     
+    # 2. Yaygın Türkçe ekleri dene
     suffixes = ['lerinden', 'larından', 'lerimiz', 'larımız', 
                 'inden', 'ından', 'unden', 'ünden',
                 'den', 'dan', 'ten', 'tan', 'de', 'da', 'te', 'ta',
                 'nin', 'nın', 'nun', 'nün', 'in', 'ın', 'un', 'ün',
                 'yi', 'yı', 'yu', 'yü',
                 'ler', 'lar', 'm', 'n', 'miz', 'niz', 'muz', 'nuz',
+                'yor', 'ıyor', 'uyor', 'üyor', # Fiil ekleri de eklendi!
                 'i', 'ı', 'u', 'ü']
     
     for suffix in suffixes:
         if word.endswith(suffix) and len(word) > len(suffix) + 2:
             potential_stem = word[:-len(suffix)]
             if potential_stem in active_keywords:
-                return potential_stem
+                return normalize_aspect(potential_stem) # Yakalanan kökü normalize et
+                
     return None
+
+"""def normalize_aspect(aspect):
+    #Yakalanan ham kökleri, JSON çıktısında daha anlamlı ve standart isimlere dönüştürür.
+    normalization_map = {
+        "kas": "kasma",
+        "kasma": "kasma",
+        "don": "donma",
+        "donma": "donma",
+        "ısın": "ısınma",
+        "ısınma": "ısınma",
+        "yavaş": "yavaşlama"
+    }
+    # Eğer listede varsa normalize et, yoksa olduğu gibi döndür
+    return normalization_map.get(aspect, aspect)"""
+
+# ==========================================
+# GENİŞLETİLMİŞ NORMALİZASYON HARİTASI
+# ==========================================
+def normalize_aspect(aspect):
+    """
+    Yakalanan ham kökleri, JSON çıktısında daha anlamlı ve standart isimlere dönüştürür.
+    """
+    normalization_map = {
+        # Elektronik
+        "kas": "kasma", "kasma": "kasma",
+        "don": "donma", "donma": "donma",
+        "ısın": "ısınma", "ısınma": "ısınma",
+        "yavaş": "yavaşlama", "yavaşlama": "yavaşlama",
+        
+        # Giyim
+        "yırtıl": "yırtılma", "yırtılma": "yırtılma",
+        "sökül": "sökülme", "sökülme": "sökülme",
+        "daral": "daralma", "daralma": "daralma",
+        "tüylen": "tüylenme", "tüylenme": "tüylenme",
+        "sol": "solma", "solma": "solma",
+        
+        # Kozmetik
+        "kurut": "kuruma", "kuruma": "kuruma",
+        "yağlan": "yağlanma", "yağlanma": "yağlanma",
+        
+        # Ev Yaşam
+        "kırıl": "kırılma", "kırılma": "kırılma",
+        "çizil": "çizilme", "çizilme": "çizilme",
+        "paslan": "paslanma", "paslanma": "paslanma"
+    }
+    return normalization_map.get(aspect, aspect)
 
 def extract_aspects(text, category="genel"):
     text_clean = re.sub(r'[^\w\sğüşıöç]', ' ', text.lower())

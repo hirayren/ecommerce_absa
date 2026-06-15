@@ -107,7 +107,6 @@ if __name__ == "__main__":
             
         print("\n" + "="*70)
         print(f"🎉 BAŞARILI! Sonuç '{OUTPUT_FILE}' dosyasına kaydedildi.")
-        print("💡 Frontend arkadaşın bu dosyayı alıp Ürün -> Site -> Satıcı ağacını çizebilir.")
         print("="*70)
         
     except FileNotFoundError:

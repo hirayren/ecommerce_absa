@@ -15,6 +15,18 @@
         }
       },
       {
+        "aspect": "ürün",
+        "sentiment": "negative",
+        "star_rating": 1.04,
+        "confidence": 0.984,
+        "status": "OK",
+        "probabilities": {
+          "negative": 0.984,
+          "neutral": 0.011,
+          "positive": 0.005
+        }
+      },
+      {
         "aspect": "ürün kutusu",
         "sentiment": "negative",
         "star_rating": 1.0,
@@ -26,11 +38,24 @@
           "positive": 0.001
         }
       }
-    ]
+    ],
+    "status": "OK"
   },
   {
     "original_text": "Fiyat performans olarak harika, sadece renk biraz farklıydı.",
     "aspects_analyzed": [
+      {
+        "aspect": "fiyat",
+        "sentiment": "positive",
+        "star_rating": 4.93,
+        "confidence": 0.968,
+        "status": "OK",
+        "probabilities": {
+          "negative": 0.003,
+          "neutral": 0.029,
+          "positive": 0.968
+        }
+      },
       {
         "aspect": "fiyat performans",
         "sentiment": "positive",
@@ -42,8 +67,21 @@
           "neutral": 0.026,
           "positive": 0.97
         }
+      },
+      {
+        "aspect": "performans",
+        "sentiment": "positive",
+        "star_rating": 4.93,
+        "confidence": 0.969,
+        "status": "OK",
+        "probabilities": {
+          "negative": 0.003,
+          "neutral": 0.028,
+          "positive": 0.969
+        }
       }
-    ]
+    ],
+    "status": "OK"
   },
   {
     "original_text": "Müşteri hizmetleri çok ilgili, kesinlikle tekrar alışveriş yaparım.",
@@ -60,6 +98,7 @@
           "positive": 0.999
         }
       }
-    ]
+    ],
+    "status": "OK"
   }
 ]
