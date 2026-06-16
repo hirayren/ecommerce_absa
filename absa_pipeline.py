@@ -33,43 +33,55 @@ label_mapping = {
 # 2. NİHAİ VE GÜVENLİ ASPECT EXTRACTION
 # ==========================================
 GENERAL_ASPECTS = {
-    "kargo", "teslimat", "gönderi", "paket", "kutu", "ambalaj",
+    "kargo", "teslimat", "gönderi", "paket", "paketleme", "kutu", "ambalaj",
     "fiyat", "ücret", "para", "indirim", "değer", "maliyet",
     "müşteri hizmetleri", "destek", "iletişim", "iade", "değişim",
     "satıcı", "mağaza", "ürün", "kalite", "performans", "dayanıklılık", "tasarım",
-    "kullanım", "kullanışlılık", "rahatlık"
+    "kullanım", "kullanışlılık", "rahatlık", "garanti"
 }
 
 # ==========================================
 # TÜM KATEGORİLER İÇİN GENİŞLETİLMİŞ ASPECT LİSTELERİ
 # ==========================================
 CATEGORY_ASPECTS = {
-    "elektronik": {
+    "laptop": {
         "pil", "şarj", "batarya", "ısınma", "ısın", 
         "ekran", "görüntü", "kamera", "ses", "hoparlör",
         "işlemci", "performans", "kasma", "kas", "donma", "don", "hız", "yavaşlama", "yavaş",
         "hafıza", "ram", "depolama", "ssd", "disk", "klavye", "touchpad", "mouse"
     },
-    "giyim": {
-        "kumaş", "beden", "kalıp", "dikiş", "renk", "yıkama", "ütü", "fermuar", "düğme",
-        "yırtılma", "yırtıl",      # "yırtılıyor" -> "yırtıl"
-        "sökülme", "sökül",        # "sökülüyor" -> "sökül"
-        "daralma", "daral",        # "daraldı" -> "daral"
-        "tüylenme", "tüylen",      # "tüyleniyor" -> "tüylen"
-        "solma", "sol"             # "rengi soldu" -> "sol"
+    "telefon": {
+        "pil", "şarj", "batarya", "ısınma", "ısın",
+        "ekran", "görüntü", "kamera", "ses", "hoparlör",
+        "işlemci", "performans", "kasma", "kas", "donma", "don", "hız", "yavaşlama", "yavaş",
+        "hafıza", "ram", "depolama", "ssd", "disk",
+        "klavye", "touchpad", "mouse"
     },
     "kozmetik": {
-        "koku", "cilt", "içerik", "etki", "doku", "leke", "nem", "gözenek",
+        "koku", "cilt", "içerik", "etki", "doku", "leke", "nem", "gözenek", "yağlanma", "yağlan",
         "tahriş", "tahriş et",     # "tahriş etti" -> "tahriş"
         "kuruma", "kurut",         # "cildimi kuruttu" -> "kurut"
         "yağlanma", "yağlan",      # "yağlanıyor" -> "yağlan"
         "sivilce", "akne"
     },
     "ev_yasam": {
-        "montaj", "sağlamlık", "temizlik", "kurulum", "boyut", "ağırlık",
+        "montaj", "sağlamlık", "temizlik", "kurulum", "boyut", "ağırlık", "tasarım", "malzeme",
         "kırılma", "kırıl",        # "kırıldı" -> "kırıl"
         "çizilme", "çizil",        # "çizildi" -> "çizil"
         "paslanma", "paslan"       # "paslandı" -> "paslan"
+    },
+    "ses_sistemleri": {
+        "ses", "hoparlör", "mikrofon", "bas", "tiz", "gürültü", "bozulma", "bozul", "kayıp", "kayıp ses",
+        "bağlantı", "bluetooth", "kablo", "uzaklık", "menzil", "pil", "şarj", "batarya"
+    },
+    "mouse": {
+        "ergonomi", "tasarım", "hassasiyet", "kablo", "kablosuz", "pil", "şarj", "batarya",
+        "tıklama", "scroll", "tekerlek", "buton", "yazılım", "sürücü", "uyumluluk"
+    },
+    "temizlik_ürünleri": {
+        "temizlik", "koku", "etki", "leke", "renk", "doku", "hassaslık", "tahriş", "tahriş et",     # "tahriş etti" -> "tahriş"
+        "kuruma", "kurut",         # "cildimi kuruttu" -> "kurut"
+        "yağlanma", "yağlan",      # "yağlanıyor
     }
 }
 
@@ -98,6 +110,7 @@ def smart_aspect_matcher(word, active_keywords):
                 'yi', 'yı', 'yu', 'yü',
                 'ler', 'lar', 'm', 'n', 'miz', 'niz', 'muz', 'nuz',
                 'yor', 'ıyor', 'uyor', 'üyor', # Fiil ekleri de eklendi!
+                'sı', 'si', 'su', 'sü', #garanti-si gibi
                 'i', 'ı', 'u', 'ü']
     
     for suffix in suffixes:

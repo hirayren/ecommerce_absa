@@ -24,18 +24,6 @@
               "original_text": "ürünü beğendim hızlı geldi paket daha önce acilmis leke vardı üstünde laptop güzel kullanışlı hafif",
               "aspects_analyzed": [
                 {
-                  "aspect": "ürün",
-                  "sentiment": "positive",
-                  "star_rating": 4.99,
-                  "confidence": 0.994,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.0,
-                    "neutral": 0.006,
-                    "positive": 0.994
-                  }
-                },
-                {
                   "aspect": "paket",
                   "sentiment": "negative",
                   "star_rating": 1.0,
@@ -45,6 +33,18 @@
                     "negative": 0.001,
                     "neutral": 0.026,
                     "positive": 0.973
+                  }
+                },
+                {
+                  "aspect": "ürün",
+                  "sentiment": "positive",
+                  "star_rating": 4.99,
+                  "confidence": 0.994,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.0,
+                    "neutral": 0.006,
+                    "positive": 0.994
                   }
                 }
               ],
@@ -169,18 +169,6 @@
               "original_text": "ürün sağlam piyasaya göre avantajlı fiati performans olarak ta iyi",
               "aspects_analyzed": [
                 {
-                  "aspect": "ürün",
-                  "sentiment": "positive",
-                  "star_rating": 5.0,
-                  "confidence": 0.998,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.0,
-                    "neutral": 0.001,
-                    "positive": 0.998
-                  }
-                },
-                {
                   "aspect": "performans",
                   "sentiment": "positive",
                   "star_rating": 5.0,
@@ -190,6 +178,18 @@
                     "negative": 0.0,
                     "neutral": 0.001,
                     "positive": 0.999
+                  }
+                },
+                {
+                  "aspect": "ürün",
+                  "sentiment": "positive",
+                  "star_rating": 5.0,
+                  "confidence": 0.998,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.0,
+                    "neutral": 0.001,
+                    "positive": 0.998
                   }
                 }
               ],
@@ -294,18 +294,6 @@
               "original_text": "ürün güzel sadece garanti süresi ayarlarda farklıydı sebebini bilmiyorum apple müşteri hizmetlerini arayıp düzelttirdim fark etmemiş olsaydım 7 ay önce bitecekti garantisi ayrıca aldıktan sonra 1500 lira fiyat düştü konu biraz üzdü",
               "aspects_analyzed": [
                 {
-                  "aspect": "ürün",
-                  "sentiment": "positive",
-                  "star_rating": 4.0,
-                  "confidence": 0.703,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.204,
-                    "neutral": 0.093,
-                    "positive": 0.703
-                  }
-                },
-                {
                   "aspect": "fiyat",
                   "sentiment": "negative",
                   "star_rating": 1.0,
@@ -315,6 +303,18 @@
                     "negative": 0.999,
                     "neutral": 0.001,
                     "positive": 0.001
+                  }
+                },
+                {
+                  "aspect": "ürün",
+                  "sentiment": "positive",
+                  "star_rating": 4.0,
+                  "confidence": 0.703,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.204,
+                    "neutral": 0.093,
+                    "positive": 0.703
                   }
                 }
               ],
@@ -425,18 +425,6 @@
               "original_text": "pili bitmiş 3 yıl önce garantisi bitmiş ürünü bana gönderip durumu belgelediğim halde 15 günlük süre geçtiğin almayan satıcı isterseniz siz alın",
               "aspects_analyzed": [
                 {
-                  "aspect": "ürün",
-                  "sentiment": "negative",
-                  "star_rating": 1.01,
-                  "confidence": 0.998,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.998,
-                    "neutral": 0.001,
-                    "positive": 0.001
-                  }
-                },
-                {
                   "aspect": "satıcı",
                   "sentiment": "negative",
                   "star_rating": 1.01,
@@ -445,6 +433,18 @@
                   "probabilities": {
                     "negative": 0.998,
                     "neutral": 0.0,
+                    "positive": 0.001
+                  }
+                },
+                {
+                  "aspect": "ürün",
+                  "sentiment": "negative",
+                  "star_rating": 1.01,
+                  "confidence": 0.998,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.998,
+                    "neutral": 0.001,
                     "positive": 0.001
                   }
                 }
@@ -461,6 +461,18 @@
             "absa_analysis": {
               "original_text": "5 yıldız veriyorum alacak kişiler dikkat etsin trendyol üzerinden böyle pahalı ürünler almayın çünkü bozuksa bi problemi varsa uzun uzun uğraşmanız gerekecek iade kabul etmiyorlar paket açılımı bahanesi aldığım ürün 2021 açılmış garantisi bitmiş pili ölmüş iadesinin reddi birbiri uyuşmayan bahaneler söylediler ülkenin hukuku var emin olun yanınıza kalmayacak",
               "aspects_analyzed": [
+                {
+                  "aspect": "paket",
+                  "sentiment": "negative",
+                  "star_rating": 1.01,
+                  "confidence": 0.998,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.998,
+                    "neutral": 0.001,
+                    "positive": 0.001
+                  }
+                },
                 {
                   "aspect": "ürün",
                   "sentiment": "negative",
@@ -482,18 +494,6 @@
                   "probabilities": {
                     "negative": 0.999,
                     "neutral": 0.0,
-                    "positive": 0.001
-                  }
-                },
-                {
-                  "aspect": "paket",
-                  "sentiment": "negative",
-                  "star_rating": 1.01,
-                  "confidence": 0.998,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.998,
-                    "neutral": 0.001,
                     "positive": 0.001
                   }
                 }
@@ -526,7 +526,7 @@
               "original_text": "hatalı ürün gönderdiler sırf kutuyu açtım diye iademi kabul etmeyip günlerce oyaladılar hiç memnun kalmadım",
               "aspects_analyzed": [
                 {
-                  "aspect": "ürün",
+                  "aspect": "kutu",
                   "sentiment": "negative",
                   "star_rating": 1.0,
                   "confidence": 0.999,
@@ -538,7 +538,7 @@
                   }
                 },
                 {
-                  "aspect": "kutu",
+                  "aspect": "ürün",
                   "sentiment": "negative",
                   "star_rating": 1.0,
                   "confidence": 0.999,
@@ -1208,18 +1208,6 @@
               "original_text": "ürünün garantisi satın almadan 6 ay önce başlamış sattığım kişiye mahçup oldum kesinlikle ürünü satıcıyı tavsiye etmiyorum",
               "aspects_analyzed": [
                 {
-                  "aspect": "ürün",
-                  "sentiment": "negative",
-                  "star_rating": 1.01,
-                  "confidence": 0.998,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.998,
-                    "neutral": 0.001,
-                    "positive": 0.002
-                  }
-                },
-                {
                   "aspect": "satıcı",
                   "sentiment": "negative",
                   "star_rating": 1.01,
@@ -1229,6 +1217,18 @@
                     "negative": 0.998,
                     "neutral": 0.0,
                     "positive": 0.001
+                  }
+                },
+                {
+                  "aspect": "ürün",
+                  "sentiment": "negative",
+                  "star_rating": 1.01,
+                  "confidence": 0.998,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.998,
+                    "neutral": 0.001,
+                    "positive": 0.002
                   }
                 }
               ],
@@ -1480,18 +1480,6 @@
               "original_text": "satıcı iyi ürün araştırın güzel kaliteli ürünü almak isteyenler inceleme videoları izlesin bence",
               "aspects_analyzed": [
                 {
-                  "aspect": "ürün",
-                  "sentiment": "positive",
-                  "star_rating": 4.97,
-                  "confidence": 0.988,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.003,
-                    "neutral": 0.01,
-                    "positive": 0.988
-                  }
-                },
-                {
                   "aspect": "satıcı",
                   "sentiment": "positive",
                   "star_rating": 4.99,
@@ -1501,6 +1489,18 @@
                     "negative": 0.002,
                     "neutral": 0.003,
                     "positive": 0.996
+                  }
+                },
+                {
+                  "aspect": "ürün",
+                  "sentiment": "positive",
+                  "star_rating": 4.97,
+                  "confidence": 0.988,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.003,
+                    "neutral": 0.01,
+                    "positive": 0.988
                   }
                 }
               ],
@@ -1614,18 +1614,6 @@
               "original_text": "ürün eski aldıklarıma benzemiyor her yönüyle alakasız bir ürün bence orijinal değil satıcıdan açıklama bekliyorum",
               "aspects_analyzed": [
                 {
-                  "aspect": "ürün",
-                  "sentiment": "negative",
-                  "star_rating": 1.01,
-                  "confidence": 0.998,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.998,
-                    "neutral": 0.002,
-                    "positive": 0.001
-                  }
-                },
-                {
                   "aspect": "satıcı",
                   "sentiment": "negative",
                   "star_rating": 1.01,
@@ -1634,6 +1622,18 @@
                   "probabilities": {
                     "negative": 0.998,
                     "neutral": 0.001,
+                    "positive": 0.001
+                  }
+                },
+                {
+                  "aspect": "ürün",
+                  "sentiment": "negative",
+                  "star_rating": 1.01,
+                  "confidence": 0.998,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.998,
+                    "neutral": 0.002,
                     "positive": 0.001
                   }
                 }
@@ -1646,12 +1646,12 @@
       "Cosmotix": {
         "summary": {
           "total_reviews": 1,
-          "total_aspects_analyzed": 2,
+          "total_aspects_analyzed": 4,
           "average_absa_star_rating": 1.0,
           "sentiment_distribution": {
             "positive": 0,
             "neutral": 0,
-            "negative": 2,
+            "negative": 4,
             "uncertain": 0
           }
         },
@@ -1666,6 +1666,30 @@
               "original_text": "arkadaşlar ürünü lütfen mecralardan almak yerine eczaneyi tercih edin ne yazıkki ilk kez eczane yerine buradan almak bir hata yaptım ürün sahte çıktı kullanmamdan iki gün sonra yüzümde onlarda sivilce çıktı cildim kızardı sonra orijinalini alıp karşılaştırdım üzerindeki adresler farklı ayrıca buradan aldığım sahte ürünün içerik kısmının üstünü kullanım şekli yazan ğıtla kapatmışlar görsellerini paylaşacağım sizde bakarsınız kendinizi seviyorsanız lütfen almayın sağdaki sahte olan",
               "aspects_analyzed": [
                 {
+                  "aspect": "kullanım",
+                  "sentiment": "negative",
+                  "star_rating": 1.0,
+                  "confidence": 0.999,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.999,
+                    "neutral": 0.0,
+                    "positive": 0.001
+                  }
+                },
+                {
+                  "aspect": "içerik",
+                  "sentiment": "negative",
+                  "star_rating": 1.01,
+                  "confidence": 0.998,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.998,
+                    "neutral": 0.001,
+                    "positive": 0.001
+                  }
+                },
+                {
                   "aspect": "ürün",
                   "sentiment": "negative",
                   "star_rating": 1.0,
@@ -1678,7 +1702,7 @@
                   }
                 },
                 {
-                  "aspect": "kullanım",
+                  "aspect": "sivilce",
                   "sentiment": "negative",
                   "star_rating": 1.0,
                   "confidence": 0.999,
@@ -1698,12 +1722,12 @@
       "La Roche Posay": {
         "summary": {
           "total_reviews": 21,
-          "total_aspects_analyzed": 20,
-          "average_absa_star_rating": 2.45,
+          "total_aspects_analyzed": 25,
+          "average_absa_star_rating": 2.32,
           "sentiment_distribution": {
-            "positive": 7,
+            "positive": 8,
             "neutral": 0,
-            "negative": 12,
+            "negative": 16,
             "uncertain": 1
           }
         },
@@ -1768,18 +1792,6 @@
               "original_text": "satıcıyı la roche posta seçmeme rağmen ürünü cosmolog gönderdi orijinal değil sanırım",
               "aspects_analyzed": [
                 {
-                  "aspect": "ürün",
-                  "sentiment": "negative",
-                  "star_rating": 1.01,
-                  "confidence": 0.997,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.997,
-                    "neutral": 0.002,
-                    "positive": 0.001
-                  }
-                },
-                {
                   "aspect": "satıcı",
                   "sentiment": "negative",
                   "star_rating": 1.01,
@@ -1789,6 +1801,18 @@
                     "negative": 0.997,
                     "neutral": 0.001,
                     "positive": 0.002
+                  }
+                },
+                {
+                  "aspect": "ürün",
+                  "sentiment": "negative",
+                  "star_rating": 1.01,
+                  "confidence": 0.997,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.997,
+                    "neutral": 0.002,
+                    "positive": 0.001
                   }
                 }
               ],
@@ -1843,6 +1867,42 @@
             "absa_analysis": {
               "original_text": "yorumlara güvenerek aldım benim bir hayal kırıklığı karma bir cilt yapım var yüzümde birkaç sivilce çıkmıştı akneler var güvenerek aldım daha ilk kullanımda yüzümde yanma kaşıntı hissi oluştu saatlerdir etkisi devam ediyor hassas ciltlerin bile kullanabileceği yazıyor kadar para verdim çöpe gidecek bence ürün her sivilce eğimlilinin kullanabileceği kadar güvenilir değil markada bununla ilgili uyarı olmali",
               "aspects_analyzed": [
+                {
+                  "aspect": "akne",
+                  "sentiment": "negative",
+                  "star_rating": 1.02,
+                  "confidence": 0.995,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.995,
+                    "neutral": 0.002,
+                    "positive": 0.003
+                  }
+                },
+                {
+                  "aspect": "sivilce",
+                  "sentiment": "negative",
+                  "star_rating": 1.01,
+                  "confidence": 0.996,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.996,
+                    "neutral": 0.002,
+                    "positive": 0.002
+                  }
+                },
+                {
+                  "aspect": "cilt",
+                  "sentiment": "negative",
+                  "star_rating": 1.01,
+                  "confidence": 0.997,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.997,
+                    "neutral": 0.002,
+                    "positive": 0.002
+                  }
+                },
                 {
                   "aspect": "ürün",
                   "sentiment": "negative",
@@ -1943,18 +2003,6 @@
               "original_text": "kapak emniyetleri yoktu her ikisininde ona şaşırdım genelde olur sürekli kullandığım bir ürün orjinal satıcıdan almaya özen gösterin derim",
               "aspects_analyzed": [
                 {
-                  "aspect": "ürün",
-                  "sentiment": "uncertain",
-                  "star_rating": 3.34,
-                  "confidence": 0.6,
-                  "status": "LOW_CONFIDENCE",
-                  "probabilities": {
-                    "negative": 0.115,
-                    "neutral": 0.6,
-                    "positive": 0.285
-                  }
-                },
-                {
                   "aspect": "satıcı",
                   "sentiment": "positive",
                   "star_rating": 4.24,
@@ -1964,6 +2012,18 @@
                     "negative": 0.137,
                     "neutral": 0.108,
                     "positive": 0.755
+                  }
+                },
+                {
+                  "aspect": "ürün",
+                  "sentiment": "uncertain",
+                  "star_rating": 3.34,
+                  "confidence": 0.6,
+                  "status": "LOW_CONFIDENCE",
+                  "probabilities": {
+                    "negative": 0.115,
+                    "neutral": 0.6,
+                    "positive": 0.285
                   }
                 }
               ],
@@ -2018,7 +2078,7 @@
               "original_text": "ürünün kapağı kırık bir şekilde teslim edildi değişim yapılamadığı iade edilecek mecbur böyle bir firma teslim edilen ürün hayal kırıklığı",
               "aspects_analyzed": [
                 {
-                  "aspect": "ürün",
+                  "aspect": "değişim",
                   "sentiment": "negative",
                   "star_rating": 1.0,
                   "confidence": 0.999,
@@ -2030,7 +2090,7 @@
                   }
                 },
                 {
-                  "aspect": "değişim",
+                  "aspect": "ürün",
                   "sentiment": "negative",
                   "star_rating": 1.0,
                   "confidence": 0.999,
@@ -2103,9 +2163,21 @@
             },
             "absa_analysis": {
               "original_text": "ilk defa kullanıyorum normalde böyle midir bilmiyorum kokusu pek hoşuma gitmedi deterjan değişik bi koku herhangi kötü bi etkisi yok şuanlık",
-              "aspects_analyzed": [],
-              "message": "NO_ASPECT_FOUND",
-              "status": "IRRELEVANT_FOR_ABSA"
+              "aspects_analyzed": [
+                {
+                  "aspect": "koku",
+                  "sentiment": "negative",
+                  "star_rating": 1.01,
+                  "confidence": 0.998,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.998,
+                    "neutral": 0.001,
+                    "positive": 0.001
+                  }
+                }
+              ],
+              "status": "OK"
             }
           },
           {
@@ -2153,9 +2225,21 @@
             },
             "absa_analysis": {
               "original_text": "gerçekten cildin yağını arındırıp cilt parıl parıl parlıyor tavsiye ederim yağlı ciltli iseniz",
-              "aspects_analyzed": [],
-              "message": "NO_ASPECT_FOUND",
-              "status": "IRRELEVANT_FOR_ABSA"
+              "aspects_analyzed": [
+                {
+                  "aspect": "cilt",
+                  "sentiment": "positive",
+                  "star_rating": 5.0,
+                  "confidence": 0.999,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.001,
+                    "neutral": 0.0,
+                    "positive": 0.999
+                  }
+                }
+              ],
+              "status": "OK"
             }
           },
           {
@@ -2194,18 +2278,6 @@
               "original_text": "satıcı la roche posay yüzden elbetteki orijinal alırken satıcıyı mutlaka kontrol edin ürünlerin hepsi sevdiğim ürünler sadece vitamini denemek aldım oda mini boy aldım kullandıktan sonra güncellerim beni tek üzen şey büssürü ürün aldım bari üç beş tester koysaydınız kalbim pıt etti onu söylim",
               "aspects_analyzed": [
                 {
-                  "aspect": "ürün",
-                  "sentiment": "positive",
-                  "star_rating": 4.53,
-                  "confidence": 0.792,
-                  "status": "OK",
-                  "probabilities": {
-                    "negative": 0.027,
-                    "neutral": 0.181,
-                    "positive": 0.792
-                  }
-                },
-                {
                   "aspect": "satıcı",
                   "sentiment": "positive",
                   "star_rating": 4.45,
@@ -2215,6 +2287,18 @@
                     "negative": 0.091,
                     "neutral": 0.092,
                     "positive": 0.817
+                  }
+                },
+                {
+                  "aspect": "ürün",
+                  "sentiment": "positive",
+                  "star_rating": 4.53,
+                  "confidence": 0.792,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.027,
+                    "neutral": 0.181,
+                    "positive": 0.792
                   }
                 }
               ],
@@ -2266,10 +2350,10 @@
       "Hepsiburada": {
         "summary": {
           "total_reviews": 2,
-          "total_aspects_analyzed": 2,
+          "total_aspects_analyzed": 3,
           "average_absa_star_rating": 4.98,
           "sentiment_distribution": {
-            "positive": 2,
+            "positive": 3,
             "neutral": 0,
             "negative": 0,
             "uncertain": 0
@@ -2299,6 +2383,18 @@
               "original_text": "sürekli kullanımda etkili 2 paketin sonuna gelince gerçek etkiyi görüyorsunuz",
               "aspects_analyzed": [
                 {
+                  "aspect": "paket",
+                  "sentiment": "positive",
+                  "star_rating": 4.97,
+                  "confidence": 0.99,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.003,
+                    "neutral": 0.007,
+                    "positive": 0.99
+                  }
+                },
+                {
                   "aspect": "kullanım",
                   "sentiment": "positive",
                   "star_rating": 4.99,
@@ -2311,15 +2407,15 @@
                   }
                 },
                 {
-                  "aspect": "paket",
+                  "aspect": "etki",
                   "sentiment": "positive",
-                  "star_rating": 4.97,
-                  "confidence": 0.99,
+                  "star_rating": 4.99,
+                  "confidence": 0.997,
                   "status": "OK",
                   "probabilities": {
-                    "negative": 0.003,
-                    "neutral": 0.007,
-                    "positive": 0.99
+                    "negative": 0.001,
+                    "neutral": 0.002,
+                    "positive": 0.997
                   }
                 }
               ],
@@ -2372,6 +2468,1583 @@
                     "negative": 0.998,
                     "neutral": 0.001,
                     "positive": 0.002
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "Razer Deathadder Essential Optik Kablolu Siyah Oyuncu Mouse RZ01-03850100-R3M1": {
+    "Hepsiburada": {
+      "PcKolik": {
+        "summary": {
+          "total_reviews": 2,
+          "total_aspects_analyzed": 1,
+          "average_absa_star_rating": 5.0,
+          "sentiment_distribution": {
+            "positive": 1,
+            "neutral": 0,
+            "negative": 0,
+            "uncertain": 0
+          }
+        },
+        "detailed_reviews": [
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2026-03-11",
+              "WordCount": 4
+            },
+            "absa_analysis": {
+              "original_text": "kaliteli ürün çok iyi",
+              "aspects_analyzed": [
+                {
+                  "aspect": "ürün",
+                  "sentiment": "positive",
+                  "star_rating": 5.0,
+                  "confidence": 0.999,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.0,
+                    "neutral": 0.0,
+                    "positive": 0.999
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2026-02-05",
+              "WordCount": 15
+            },
+            "absa_analysis": {
+              "original_text": "büyük eller uygun bir mouse ani dönüşler endişe etmenize gerek yok takılmıyor hiç bir şekilde",
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
+            }
+          }
+        ]
+      },
+      "Gamemar": {
+        "summary": {
+          "total_reviews": 3,
+          "total_aspects_analyzed": 5,
+          "average_absa_star_rating": 4.51,
+          "sentiment_distribution": {
+            "positive": 4,
+            "neutral": 0,
+            "negative": 0,
+            "uncertain": 1
+          }
+        },
+        "detailed_reviews": [
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2026-03-06",
+              "WordCount": 13
+            },
+            "absa_analysis": {
+              "original_text": "logitech in sessiz mousundan geçtim tıklama seslerine alışmak biraz sürdü gayet güzel ürünü",
+              "aspects_analyzed": [
+                {
+                  "aspect": "tıklama",
+                  "sentiment": "uncertain",
+                  "star_rating": 2.56,
+                  "confidence": 0.551,
+                  "status": "LOW_CONFIDENCE",
+                  "probabilities": {
+                    "negative": 0.551,
+                    "neutral": 0.119,
+                    "positive": 0.331
+                  }
+                },
+                {
+                  "aspect": "ürün",
+                  "sentiment": "positive",
+                  "star_rating": 4.99,
+                  "confidence": 0.994,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.001,
+                    "neutral": 0.005,
+                    "positive": 0.994
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2025-09-29",
+              "WordCount": 11
+            },
+            "absa_analysis": {
+              "original_text": "mükemmel bir ürün paketleme vesaire herseyi güzel fiyatınin üstünde performans veriyo",
+              "aspects_analyzed": [
+                {
+                  "aspect": "performans",
+                  "sentiment": "positive",
+                  "star_rating": 4.99,
+                  "confidence": 0.996,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.002,
+                    "neutral": 0.002,
+                    "positive": 0.996
+                  }
+                },
+                {
+                  "aspect": "ürün",
+                  "sentiment": "positive",
+                  "star_rating": 5.0,
+                  "confidence": 0.998,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.001,
+                    "neutral": 0.001,
+                    "positive": 0.998
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2025-09-22",
+              "WordCount": 6
+            },
+            "absa_analysis": {
+              "original_text": "ürün güzel elime v2 versiyonu geldi",
+              "aspects_analyzed": [
+                {
+                  "aspect": "ürün",
+                  "sentiment": "positive",
+                  "star_rating": 5.0,
+                  "confidence": 0.999,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.0,
+                    "neutral": 0.001,
+                    "positive": 0.999
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          }
+        ]
+      },
+      "ofisjet": {
+        "summary": {
+          "total_reviews": 8,
+          "total_aspects_analyzed": 7,
+          "average_absa_star_rating": 3.53,
+          "sentiment_distribution": {
+            "positive": 4,
+            "neutral": 0,
+            "negative": 2,
+            "uncertain": 1
+          }
+        },
+        "detailed_reviews": [
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2026-02-24",
+              "WordCount": 24
+            },
+            "absa_analysis": {
+              "original_text": "ürün tam elime oturdu gerçekten razer kalitesini belli ediyor alacaklara tavsiyem eliniz büyük değilse sakın almayın çünkü küçük gelecektir bilginize razer şimdiden teşekkür ederim",
+              "aspects_analyzed": [
+                {
+                  "aspect": "ürün",
+                  "sentiment": "positive",
+                  "star_rating": 4.98,
+                  "confidence": 0.99,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.001,
+                    "neutral": 0.009,
+                    "positive": 0.99
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2026-02-12",
+              "WordCount": 4
+            },
+            "absa_analysis": {
+              "original_text": "sorunsuz geldi çok güzel",
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 4,
+              "Date": "2025-10-31",
+              "WordCount": 11
+            },
+            "absa_analysis": {
+              "original_text": "ürünü satıcı orjinal ürün sağlıyor tek sorunu kablosunun aşırı dandik olması",
+              "aspects_analyzed": [
+                {
+                  "aspect": "satıcı",
+                  "sentiment": "uncertain",
+                  "star_rating": 2.7,
+                  "confidence": 0.547,
+                  "status": "LOW_CONFIDENCE",
+                  "probabilities": {
+                    "negative": 0.547,
+                    "neutral": 0.055,
+                    "positive": 0.398
+                  }
+                },
+                {
+                  "aspect": "ürün",
+                  "sentiment": "negative",
+                  "star_rating": 1.43,
+                  "confidence": 0.87,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.87,
+                    "neutral": 0.047,
+                    "positive": 0.083
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 4,
+              "Date": "2025-10-04",
+              "WordCount": 15
+            },
+            "absa_analysis": {
+              "original_text": "ürün güzel bende birden bire kesmeye başladı artık nedense birgisayara bağlanmıyor 4 ay güzel kullandım",
+              "aspects_analyzed": [
+                {
+                  "aspect": "ürün",
+                  "sentiment": "positive",
+                  "star_rating": 4.99,
+                  "confidence": 0.997,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.001,
+                    "neutral": 0.001,
+                    "positive": 0.997
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 4,
+              "Date": "2025-09-23",
+              "WordCount": 6
+            },
+            "absa_analysis": {
+              "original_text": "qualite baska bir şet dirket al",
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2025-09-09",
+              "WordCount": 3
+            },
+            "absa_analysis": {
+              "original_text": "fiyata göre harika",
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2025-08-28",
+              "WordCount": 6
+            },
+            "absa_analysis": {
+              "original_text": "beklentimi karşıladı gayet güzel bir ürün",
+              "aspects_analyzed": [
+                {
+                  "aspect": "ürün",
+                  "sentiment": "positive",
+                  "star_rating": 5.0,
+                  "confidence": 0.998,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.0,
+                    "neutral": 0.002,
+                    "positive": 0.998
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2025-07-31",
+              "WordCount": 26
+            },
+            "absa_analysis": {
+              "original_text": "fare çok güzel razer uygulamasını indirip kullanamaya başlayın paketleme çok iyi değildi kargoda ezilmiş sanırım biraz kutu onun dışında fare çok güzel fiyatına göre en iyisi",
+              "aspects_analyzed": [
+                {
+                  "aspect": "kutu",
+                  "sentiment": "positive",
+                  "star_rating": 4.63,
+                  "confidence": 0.837,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.022,
+                    "neutral": 0.141,
+                    "positive": 0.837
+                  }
+                },
+                {
+                  "aspect": "kargo",
+                  "sentiment": "negative",
+                  "star_rating": 1.01,
+                  "confidence": 0.996,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.996,
+                    "neutral": 0.002,
+                    "positive": 0.002
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          }
+        ]
+      },
+      "Teknosa": {
+        "summary": {
+          "total_reviews": 1,
+          "total_aspects_analyzed": 1,
+          "average_absa_star_rating": 4.73,
+          "sentiment_distribution": {
+            "positive": 1,
+            "neutral": 0,
+            "negative": 0,
+            "uncertain": 0
+          }
+        },
+        "detailed_reviews": [
+          {
+            "original_data": {
+              "Rating": 4,
+              "Date": "2026-01-15",
+              "WordCount": 9
+            },
+            "absa_analysis": {
+              "original_text": "üründen son derece memnunum tek sevmediğim özelliği ağır olması",
+              "aspects_analyzed": [
+                {
+                  "aspect": "ürün",
+                  "sentiment": "positive",
+                  "star_rating": 4.73,
+                  "confidence": 0.91,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.044,
+                    "neutral": 0.046,
+                    "positive": 0.91
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          }
+        ]
+      },
+      "GarajOnline": {
+        "summary": {
+          "total_reviews": 7,
+          "total_aspects_analyzed": 3,
+          "average_absa_star_rating": 4.88,
+          "sentiment_distribution": {
+            "positive": 3,
+            "neutral": 0,
+            "negative": 0,
+            "uncertain": 0
+          }
+        },
+        "detailed_reviews": [
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2026-01-12",
+              "WordCount": 4
+            },
+            "absa_analysis": {
+              "original_text": "hızlı sağlam şekilde geldi",
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 4,
+              "Date": "2025-09-12",
+              "WordCount": 6
+            },
+            "absa_analysis": {
+              "original_text": "ürün güzel bi kadar ağır büyük",
+              "aspects_analyzed": [
+                {
+                  "aspect": "ürün",
+                  "sentiment": "positive",
+                  "star_rating": 4.65,
+                  "confidence": 0.891,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.064,
+                    "neutral": 0.045,
+                    "positive": 0.891
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2025-09-10",
+              "WordCount": 17
+            },
+            "absa_analysis": {
+              "original_text": "ürün kaliteli baya sağ tık biraz geç algılıyor gibimw geldi onun dışında bir sorun yok gayet başarılı",
+              "aspects_analyzed": [
+                {
+                  "aspect": "ürün",
+                  "sentiment": "positive",
+                  "star_rating": 4.99,
+                  "confidence": 0.996,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.0,
+                    "neutral": 0.003,
+                    "positive": 0.996
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2025-09-08",
+              "WordCount": 4
+            },
+            "absa_analysis": {
+              "original_text": "daha denemedim inşallah iyidir",
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2025-08-16",
+              "WordCount": 11
+            },
+            "absa_analysis": {
+              "original_text": "razer modelini oyun almıştım muhteşemdi sonra iş aldım dünyanın en iyisi",
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2025-08-11",
+              "WordCount": 7
+            },
+            "absa_analysis": {
+              "original_text": "cok beğendim hemen kargo geldi çok hızlıydı",
+              "aspects_analyzed": [
+                {
+                  "aspect": "kargo",
+                  "sentiment": "positive",
+                  "star_rating": 4.99,
+                  "confidence": 0.997,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.001,
+                    "neutral": 0.002,
+                    "positive": 0.997
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2025-08-07",
+              "WordCount": 4
+            },
+            "absa_analysis": {
+              "original_text": "rgb ışığı çok güzel",
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
+            }
+          }
+        ]
+      },
+      "VATAN BİLGİSAYAR": {
+        "summary": {
+          "total_reviews": 2,
+          "total_aspects_analyzed": 1,
+          "average_absa_star_rating": 4.76,
+          "sentiment_distribution": {
+            "positive": 1,
+            "neutral": 0,
+            "negative": 0,
+            "uncertain": 0
+          }
+        },
+        "detailed_reviews": [
+          {
+            "original_data": {
+              "Rating": 4,
+              "Date": "2025-12-27",
+              "WordCount": 16
+            },
+            "absa_analysis": {
+              "original_text": "güzel bir mouse elim büyük olduğu hafif taşma yapıyor ele oturuyor mause denebilir uygun fiyata aldım",
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2025-12-08",
+              "WordCount": 21
+            },
+            "absa_analysis": {
+              "original_text": "fiyatına göre gayet premium hissettiren bir ürün 10 senedir razer mouse kullanıyorum diğer mouse lar bi farklı geliyor bağımlılık yaptı galiba",
+              "aspects_analyzed": [
+                {
+                  "aspect": "ürün",
+                  "sentiment": "positive",
+                  "star_rating": 4.76,
+                  "confidence": 0.894,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.015,
+                    "neutral": 0.091,
+                    "positive": 0.894
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          }
+        ]
+      },
+      "Razer Shop": {
+        "summary": {
+          "total_reviews": 4,
+          "total_aspects_analyzed": 8,
+          "average_absa_star_rating": 3.5,
+          "sentiment_distribution": {
+            "positive": 5,
+            "neutral": 0,
+            "negative": 2,
+            "uncertain": 1
+          }
+        },
+        "detailed_reviews": [
+          {
+            "original_data": {
+              "Rating": 4,
+              "Date": "2025-12-08",
+              "WordCount": 14
+            },
+            "absa_analysis": {
+              "original_text": "dpı ayarını uygulamadan yapmam dışında hoşuma gitmeyen hiçbir şey olmadı bence gayet güzel ürün",
+              "aspects_analyzed": [
+                {
+                  "aspect": "ürün",
+                  "sentiment": "positive",
+                  "star_rating": 5.0,
+                  "confidence": 0.999,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.0,
+                    "neutral": 0.0,
+                    "positive": 0.999
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2025-11-28",
+              "WordCount": 9
+            },
+            "absa_analysis": {
+              "original_text": "güzel boyutuna göre hafif bir mouse fiyat performans diyebilirim",
+              "aspects_analyzed": [
+                {
+                  "aspect": "fiyat",
+                  "sentiment": "positive",
+                  "star_rating": 4.29,
+                  "confidence": 0.706,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.059,
+                    "neutral": 0.234,
+                    "positive": 0.706
+                  }
+                },
+                {
+                  "aspect": "performans",
+                  "sentiment": "positive",
+                  "star_rating": 4.42,
+                  "confidence": 0.739,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.029,
+                    "neutral": 0.232,
+                    "positive": 0.739
+                  }
+                },
+                {
+                  "aspect": "fiyat performans",
+                  "sentiment": "positive",
+                  "star_rating": 4.53,
+                  "confidence": 0.809,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.045,
+                    "neutral": 0.146,
+                    "positive": 0.809
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2025-11-19",
+              "WordCount": 18
+            },
+            "absa_analysis": {
+              "original_text": "ürünün tek sıkıntısı örgü kablo olmaması örgü kablo olsaydı tam puan verirdin malzeme kalitesine kablosu çok dayanacak gelmiyor",
+              "aspects_analyzed": [
+                {
+                  "aspect": "kablo",
+                  "sentiment": "negative",
+                  "star_rating": 1.01,
+                  "confidence": 0.998,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.998,
+                    "neutral": 0.001,
+                    "positive": 0.001
+                  }
+                },
+                {
+                  "aspect": "ürün",
+                  "sentiment": "negative",
+                  "star_rating": 1.01,
+                  "confidence": 0.996,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.996,
+                    "neutral": 0.001,
+                    "positive": 0.002
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 1,
+              "Date": "2025-10-15",
+              "WordCount": 34
+            },
+            "absa_analysis": {
+              "original_text": "paketlemede bir hata oluşmuş bana kablosu yamuk şekilde geldi onun dışında cokta sıkıntı yok ürün orjinal geldi iade ettim kaliteli mause fotoğrafındaki ipli bir kablosu yok normal kablosu var geldiğinde cok bükük oluyor zaten",
+              "aspects_analyzed": [
+                {
+                  "aspect": "ürün",
+                  "sentiment": "positive",
+                  "star_rating": 4.12,
+                  "confidence": 0.65,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.088,
+                    "neutral": 0.262,
+                    "positive": 0.65
+                  }
+                },
+                {
+                  "aspect": "iade",
+                  "sentiment": "uncertain",
+                  "star_rating": 3.64,
+                  "confidence": 0.485,
+                  "status": "LOW_CONFIDENCE",
+                  "probabilities": {
+                    "negative": 0.165,
+                    "neutral": 0.35,
+                    "positive": 0.485
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          }
+        ]
+      },
+      "Nethouse": {
+        "summary": {
+          "total_reviews": 1,
+          "total_aspects_analyzed": 2,
+          "average_absa_star_rating": 4.99,
+          "sentiment_distribution": {
+            "positive": 2,
+            "neutral": 0,
+            "negative": 0,
+            "uncertain": 0
+          }
+        },
+        "detailed_reviews": [
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2025-12-01",
+              "WordCount": 11
+            },
+            "absa_analysis": {
+              "original_text": "ürün güzel kargo çok hızlıydı cumartesi sipariş geçtim pazar tesliim aldım",
+              "aspects_analyzed": [
+                {
+                  "aspect": "ürün",
+                  "sentiment": "positive",
+                  "star_rating": 4.99,
+                  "confidence": 0.997,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.001,
+                    "neutral": 0.002,
+                    "positive": 0.997
+                  }
+                },
+                {
+                  "aspect": "kargo",
+                  "sentiment": "positive",
+                  "star_rating": 4.99,
+                  "confidence": 0.998,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.001,
+                    "neutral": 0.002,
+                    "positive": 0.998
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          }
+        ]
+      },
+      "TNG": {
+        "summary": {
+          "total_reviews": 1,
+          "total_aspects_analyzed": 1,
+          "average_absa_star_rating": 2.92,
+          "sentiment_distribution": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0,
+            "uncertain": 1
+          }
+        },
+        "detailed_reviews": [
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2025-10-24",
+              "WordCount": 9
+            },
+            "absa_analysis": {
+              "original_text": "ürün iyi renk değiştirme özelliği olsaydı daha iyi olabilirdi",
+              "aspects_analyzed": [
+                {
+                  "aspect": "ürün",
+                  "sentiment": "uncertain",
+                  "star_rating": 2.92,
+                  "confidence": 0.451,
+                  "status": "LOW_CONFIDENCE",
+                  "probabilities": {
+                    "negative": 0.295,
+                    "neutral": 0.451,
+                    "positive": 0.254
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          }
+        ]
+      },
+      "BESAM iletişim": {
+        "summary": {
+          "total_reviews": 1,
+          "total_aspects_analyzed": 1,
+          "average_absa_star_rating": 4.98,
+          "sentiment_distribution": {
+            "positive": 1,
+            "neutral": 0,
+            "negative": 0,
+            "uncertain": 0
+          }
+        },
+        "detailed_reviews": [
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2025-08-08",
+              "WordCount": 6
+            },
+            "absa_analysis": {
+              "original_text": "satıcı hemen kargoladı hediye teşekkür ederim",
+              "aspects_analyzed": [
+                {
+                  "aspect": "satıcı",
+                  "sentiment": "positive",
+                  "star_rating": 4.98,
+                  "confidence": 0.993,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.004,
+                    "neutral": 0.003,
+                    "positive": 0.993
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "Sleepy Easy Clean Premium Beyaz Sabun Katkılı Yüzey Temizlik Havlusu Mendili 100 Yaprak": {
+    "Hepsiburada": {
+      "Sleepy": {
+        "summary": {
+          "total_reviews": 6,
+          "total_aspects_analyzed": 3,
+          "average_absa_star_rating": 1.32,
+          "sentiment_distribution": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 3,
+            "uncertain": 0
+          }
+        },
+        "detailed_reviews": [
+          {
+            "original_data": {
+              "Rating": 1,
+              "Date": "2026-03-07",
+              "WordCount": 21
+            },
+            "absa_analysis": {
+              "original_text": "paketten sekilde cikti satıcıya yazdım bana siz acarken yapmışsınızdır dedi evet ben üçgen olarak nasil kesmeyi becerdiysem bi daha asla almam",
+              "aspects_analyzed": [
+                {
+                  "aspect": "paket",
+                  "sentiment": "negative",
+                  "star_rating": 1.52,
+                  "confidence": 0.848,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.848,
+                    "neutral": 0.045,
+                    "positive": 0.107
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 1,
+              "Date": "2026-03-02",
+              "WordCount": 7
+            },
+            "absa_analysis": {
+              "original_text": "indirimden aldık patlak çıktı daha pahalıya geldi",
+              "aspects_analyzed": [
+                {
+                  "aspect": "indirim",
+                  "sentiment": "negative",
+                  "star_rating": 1.44,
+                  "confidence": 0.827,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.827,
+                    "neutral": 0.126,
+                    "positive": 0.047
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2026-01-27",
+              "WordCount": 9
+            },
+            "absa_analysis": {
+              "original_text": "teşekkürler paketleme çok özenliydi sleepy kalitesi her zaman muazzam",
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2025-12-06",
+              "WordCount": 3
+            },
+            "absa_analysis": {
+              "original_text": "en sevdiğim net",
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 1,
+              "Date": "2025-12-04",
+              "WordCount": 10
+            },
+            "absa_analysis": {
+              "original_text": "sipariş verilen ürünle gönderilen ürün asla aynı değil tavsiye etmiyorum",
+              "aspects_analyzed": [
+                {
+                  "aspect": "ürün",
+                  "sentiment": "negative",
+                  "star_rating": 1.0,
+                  "confidence": 0.999,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.999,
+                    "neutral": 0.001,
+                    "positive": 0.001
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2025-11-28",
+              "WordCount": 6
+            },
+            "absa_analysis": {
+              "original_text": "çok hızlı geldi çok uyhuna aldım",
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
+            }
+          }
+        ]
+      },
+      "Hepsiburada": {
+        "summary": {
+          "total_reviews": 18,
+          "total_aspects_analyzed": 9,
+          "average_absa_star_rating": 4.09,
+          "sentiment_distribution": {
+            "positive": 7,
+            "neutral": 0,
+            "negative": 2,
+            "uncertain": 0
+          }
+        },
+        "detailed_reviews": [
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2026-02-22",
+              "WordCount": 7
+            },
+            "absa_analysis": {
+              "original_text": "buyuk kolaylik surekli kullanıyorum uygun fiyata aldim",
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2026-02-09",
+              "WordCount": 6
+            },
+            "absa_analysis": {
+              "original_text": "sürekli stok yenilediğim bir ürün süper",
+              "aspects_analyzed": [
+                {
+                  "aspect": "ürün",
+                  "sentiment": "positive",
+                  "star_rating": 5.0,
+                  "confidence": 0.999,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.001,
+                    "neutral": 0.0,
+                    "positive": 0.999
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2026-02-04",
+              "WordCount": 4
+            },
+            "absa_analysis": {
+              "original_text": "emeği geçen herkese teşekkürler",
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2026-01-30",
+              "WordCount": 13
+            },
+            "absa_analysis": {
+              "original_text": "pratik temizlik kolay hale geldi elimizin altında hızlı sağlam paketle gönderildi teşekkürler hepsiburada",
+              "aspects_analyzed": [
+                {
+                  "aspect": "temizlik",
+                  "sentiment": "positive",
+                  "star_rating": 5.0,
+                  "confidence": 0.998,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.0,
+                    "neutral": 0.001,
+                    "positive": 0.998
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2026-01-27",
+              "WordCount": 5
+            },
+            "absa_analysis": {
+              "original_text": "sorunsuz teslim aldım memnun kaldım",
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2026-01-23",
+              "WordCount": 6
+            },
+            "absa_analysis": {
+              "original_text": "çok güzel severek kullandığım bir ürün",
+              "aspects_analyzed": [
+                {
+                  "aspect": "ürün",
+                  "sentiment": "positive",
+                  "star_rating": 5.0,
+                  "confidence": 0.999,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.0,
+                    "neutral": 0.001,
+                    "positive": 0.999
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2026-01-23",
+              "WordCount": 5
+            },
+            "absa_analysis": {
+              "original_text": "güzel bir ürün sürekli kullanıyoruz",
+              "aspects_analyzed": [
+                {
+                  "aspect": "ürün",
+                  "sentiment": "positive",
+                  "star_rating": 5.0,
+                  "confidence": 0.999,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.0,
+                    "neutral": 0.001,
+                    "positive": 0.999
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 4,
+              "Date": "2026-01-12",
+              "WordCount": 5
+            },
+            "absa_analysis": {
+              "original_text": "sağlam bir şekilde elimize ulaştı",
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2026-01-01",
+              "WordCount": 7
+            },
+            "absa_analysis": {
+              "original_text": "harika bir ürün başarılı bir şekilde ulaştı",
+              "aspects_analyzed": [
+                {
+                  "aspect": "ürün",
+                  "sentiment": "positive",
+                  "star_rating": 5.0,
+                  "confidence": 0.999,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.0,
+                    "neutral": 0.0,
+                    "positive": 0.999
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2025-12-28",
+              "WordCount": 4
+            },
+            "absa_analysis": {
+              "original_text": "sleepy kalitesi indirimden aldım",
+              "aspects_analyzed": [
+                {
+                  "aspect": "indirim",
+                  "sentiment": "positive",
+                  "star_rating": 4.82,
+                  "confidence": 0.923,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.013,
+                    "neutral": 0.063,
+                    "positive": 0.923
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2025-12-19",
+              "WordCount": 4
+            },
+            "absa_analysis": {
+              "original_text": "çok iyi hızlı geldi",
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2025-12-15",
+              "WordCount": 3
+            },
+            "absa_analysis": {
+              "original_text": "resimdeki geldi thanks",
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2025-12-14",
+              "WordCount": 7
+            },
+            "absa_analysis": {
+              "original_text": "diğer markaların hiçbiri sleepy nin yerini tutmuyor",
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2025-12-12",
+              "WordCount": 5
+            },
+            "absa_analysis": {
+              "original_text": "sabun kokulu ağır gelebilir temiz",
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2025-12-07",
+              "WordCount": 10
+            },
+            "absa_analysis": {
+              "original_text": "paketi patlat bir şekilde geldi kısa sürede bitiremeceğim kuruyacak maalesef",
+              "aspects_analyzed": [
+                {
+                  "aspect": "paket",
+                  "sentiment": "negative",
+                  "star_rating": 1.01,
+                  "confidence": 0.998,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.998,
+                    "neutral": 0.001,
+                    "positive": 0.001
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2025-12-03",
+              "WordCount": 17
+            },
+            "absa_analysis": {
+              "original_text": "indirimdeyken aldım diğer markalardan hem daha sağlam hem daha güzel ıslaklığı ben hep markayı kullanıyorum tavsiye ederim",
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 1,
+              "Date": "2025-12-03",
+              "WordCount": 22
+            },
+            "absa_analysis": {
+              "original_text": "merhaba 4 paket almıştım malesef paketin bir tanesi yırtılmış olarak gönderilmiş çok güzel karton bir kolinin içerisine bilerek yırtık konulması çok üzücü",
+              "aspects_analyzed": [
+                {
+                  "aspect": "paket",
+                  "sentiment": "negative",
+                  "star_rating": 1.0,
+                  "confidence": 0.999,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.999,
+                    "neutral": 0.0,
+                    "positive": 0.001
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2025-12-03",
+              "WordCount": 6
+            },
+            "absa_analysis": {
+              "original_text": "sürekli kullandığım indirimde buldukca stokladigim urun",
+              "aspects_analyzed": [
+                {
+                  "aspect": "indirim",
+                  "sentiment": "positive",
+                  "star_rating": 4.95,
+                  "confidence": 0.985,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.008,
+                    "neutral": 0.007,
+                    "positive": 0.985
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          }
+        ]
+      },
+      "ebebek": {
+        "summary": {
+          "total_reviews": 4,
+          "total_aspects_analyzed": 3,
+          "average_absa_star_rating": 1.28,
+          "sentiment_distribution": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 3,
+            "uncertain": 0
+          }
+        },
+        "detailed_reviews": [
+          {
+            "original_data": {
+              "Rating": 1,
+              "Date": "2026-02-09",
+              "WordCount": 19
+            },
+            "absa_analysis": {
+              "original_text": "ürün mü değişti mu orijinal değil anlamadım daha önce kullandiklarim hiç iz bırakmazdı yapısı farklıydı iz bırakıyor hiç begenmedim",
+              "aspects_analyzed": [
+                {
+                  "aspect": "ürün",
+                  "sentiment": "negative",
+                  "star_rating": 1.05,
+                  "confidence": 0.977,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.977,
+                    "neutral": 0.021,
+                    "positive": 0.002
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 1,
+              "Date": "2026-01-08",
+              "WordCount": 21
+            },
+            "absa_analysis": {
+              "original_text": "ürün eski boyutlarinda değil çok sevdi herkes alıştı diye sağolsunlar hemen girdikleri haller biz bunu hak etmiyoruz resmen yari yariya küçülmüş",
+              "aspects_analyzed": [
+                {
+                  "aspect": "ürün",
+                  "sentiment": "negative",
+                  "star_rating": 1.36,
+                  "confidence": 0.887,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.887,
+                    "neutral": 0.048,
+                    "positive": 0.065
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 1,
+              "Date": "2025-12-30",
+              "WordCount": 14
+            },
+            "absa_analysis": {
+              "original_text": "paketleme hayal kırıklığı aldığım sleepy leri tek poşete koymuşlar içerisindeki sleepy ıslak mendili patlamış",
+              "aspects_analyzed": [],
+              "message": "NO_ASPECT_FOUND",
+              "status": "IRRELEVANT_FOR_ABSA"
+            }
+          },
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2025-11-30",
+              "WordCount": 10
+            },
+            "absa_analysis": {
+              "original_text": "kargo paketlemesini daha özenli yapmanızı naçizane kargo firmasını değişmenizi öneririm",
+              "aspects_analyzed": [
+                {
+                  "aspect": "kargo",
+                  "sentiment": "negative",
+                  "star_rating": 1.43,
+                  "confidence": 0.884,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.884,
+                    "neutral": 0.02,
+                    "positive": 0.096
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          }
+        ]
+      },
+      "Tıpış Tıpış": {
+        "summary": {
+          "total_reviews": 1,
+          "total_aspects_analyzed": 1,
+          "average_absa_star_rating": 1.01,
+          "sentiment_distribution": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 1,
+            "uncertain": 0
+          }
+        },
+        "detailed_reviews": [
+          {
+            "original_data": {
+              "Rating": 1,
+              "Date": "2026-01-04",
+              "WordCount": 12
+            },
+            "absa_analysis": {
+              "original_text": "kesinlikle almayınn ürün kuru geliyor ıslaklığını yitirmiş işe yaramaz toz bezi yaparsınız",
+              "aspects_analyzed": [
+                {
+                  "aspect": "ürün",
+                  "sentiment": "negative",
+                  "star_rating": 1.01,
+                  "confidence": 0.998,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.998,
+                    "neutral": 0.001,
+                    "positive": 0.001
+                  }
+                }
+              ],
+              "status": "OK"
+            }
+          }
+        ]
+      },
+      "hepeğitim": {
+        "summary": {
+          "total_reviews": 1,
+          "total_aspects_analyzed": 1,
+          "average_absa_star_rating": 5.0,
+          "sentiment_distribution": {
+            "positive": 1,
+            "neutral": 0,
+            "negative": 0,
+            "uncertain": 0
+          }
+        },
+        "detailed_reviews": [
+          {
+            "original_data": {
+              "Rating": 5,
+              "Date": "2025-12-02",
+              "WordCount": 5
+            },
+            "absa_analysis": {
+              "original_text": "sürekli kullandığım bir ürün güzel",
+              "aspects_analyzed": [
+                {
+                  "aspect": "ürün",
+                  "sentiment": "positive",
+                  "star_rating": 5.0,
+                  "confidence": 0.999,
+                  "status": "OK",
+                  "probabilities": {
+                    "negative": 0.0,
+                    "neutral": 0.0,
+                    "positive": 0.999
                   }
                 }
               ],

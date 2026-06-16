@@ -3,6 +3,17 @@ import os
 from collections import defaultdict
 from absa_pipeline import run_absa_pipeline  # Daha önce yazdığın ve test ettiğin fonksiyon
 
+
+# ==========================================
+# BASİT KATEGORİ OKUYUCU (Tahmin yok, sadece okuma)
+# ==========================================
+def get_category(item):
+    """
+    JSON'daki 'Category' alanını okur. 
+    Eğer bir sebeple eksikse, sistem çökmesin diye 'genel' olarak varsayar.
+    """
+    return str(item.get("Category", "genel")).lower().strip()
+
 # ==========================================
 # ÇOK KAYNAKLI (MULTI-SOURCE) GRUP LAMA VE ANALİZ
 # ==========================================
@@ -23,15 +34,18 @@ def process_multi_source_data(raw_data_list):
         site = item.get("Site", "Bilinmeyen Site")
         seller = item.get("Seller", "Bilinmeyen Satıcı")
         
-        # Model için temizlenmiş metni kullan (Daha yüksek başarı sağlar!)
+        # Model için temizlenmiş metni kullan
         text_to_analyze = item.get("CleanReview", item.get("Review", ""))
         
-        # İlerleme çubuğu efekti (her 10 yorumda bir yazdır ki terminal dolmasın)
-        if i % 10 == 0 or i == len(raw_data_list) - 1:
-            print(f"[{i+1}/{len(raw_data_list)}] {product[:30]}... | {site} | {seller}")
+        # 🌟 1. EKLENECEK SATIR: Kategoriyi belirle
+        category = get_category(item)
         
-        # 1. ABSA Analizini Yap
-        absa_result = run_absa_pipeline(text_to_analyze)
+        # İlerleme çubuğu efekti (Kategori bilgisini de ekledik)
+        if i % 10 == 0 or i == len(raw_data_list) - 1:
+            print(f"[{i+1}/{len(raw_data_list)}] {product[:30]}... | {site} | {seller} | 🏷️ Kategori: {category.upper()}")
+        
+        # 🌟 2. DEĞİŞTİRİLECEK SATIR: Pipeline'a kategoriyi gönder
+        absa_result = run_absa_pipeline(text_to_analyze, category)
         
         # 2. Orijinal veriyi ve analiz sonucunu birleştir
         enriched_review = {
