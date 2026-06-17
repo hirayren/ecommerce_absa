@@ -8,11 +8,14 @@ import re
 # 1. HAZIRLIK: ABSA MODELİ YÜKLEME
 # ==========================================
 MODEL_NAME = "Sengil/ABSA-Turkish-bert-based-small"
-print("🔹 ABSA modeli yükleniyor... (İlk seferde ~500MB indirecek)")
-tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME)
-model.eval()  # Tahmin modu
+print("🔹 ABSA modeli yükleniyor...")
 
+# 🌟 SİHİRLİ SATIRLAR BURADA:
+# local_files_only=True demek: "İnternete bakma, sadece bilgisayarımdaki kayıtlı dosyayı kullan" demektir.
+tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, local_files_only=True)
+model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME, local_files_only=True)
+
+model.eval()  # Tahmin modu
 id2label = model.config.id2label
 print(f"✅ Model Hazır. Sınıflar: {id2label}\n")
 
